@@ -15,6 +15,7 @@ function pushNetwork(store: Store, data: WxPerformanceItem) {
 }
 
 const Events = {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   [WxPerformanceItemType.AppOnLaunch]: function (args: any[]) {
     const _this = this as Store
     const now = Date.now()

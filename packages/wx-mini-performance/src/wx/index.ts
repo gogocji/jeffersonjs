@@ -14,6 +14,7 @@ export function initMemoryWarning(store: Store, need: boolean) {
 
 // 网络状态
 export function noNetworkType<T extends WechatMiniprogram.GetNetworkTypeOption = WechatMiniprogram.GetNetworkTypeOption>(
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   option?: T
 ): WechatMiniprogram.PromisifySuccessResult<T, WechatMiniprogram.GetNetworkTypeOption> {
   return Promise.resolve({
