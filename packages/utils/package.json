@@ -1,5 +1,5 @@
 {
-  "name": "@mitojs/utils",
+  "name": "@jfsonjs/utils",
   "version": "3.0.1",
   "description": "@mitojs/utils",
   "author": "cjinhuo",
@@ -26,5 +26,8 @@
   "dependencies": {
     "@mitojs/shared": "3.0.1",
     "@mitojs/types": "3.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

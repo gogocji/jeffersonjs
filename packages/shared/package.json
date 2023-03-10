@@ -1,5 +1,5 @@
 {
-  "name": "@mitojs/shared",
+  "name": "@jfsonjs/shared",
   "version": "3.0.1",
   "description": "@mitojs/shared",
   "author": "cjinhuo",
@@ -22,5 +22,8 @@
     "mitojs",
     "sdk",
     "monitor"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

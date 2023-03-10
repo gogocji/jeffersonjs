@@ -1,5 +1,5 @@
 {
-  "name": "@mitojs/types",
+  "name": "@jfsonjs/types",
   "version": "3.0.1",
   "description": "@mitojs/types",
   "author": "cjinhuo",
@@ -28,5 +28,8 @@
     "@mitojs/utils": "3.0.1",
     "@mitojs/shared": "3.0.1",
     "@types/wechat-miniprogram": "^3.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

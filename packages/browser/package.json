@@ -1,8 +1,8 @@
 {
-  "name": "@mitojs/browser",
+  "name": "@jfsonjs/browser",
   "version": "3.0.1",
   "description": "A SDK For Monitoring Browser Errors",
-  "author": "cjinhuo",
+  "author": "gogocj",
   "license": "MIT",
   "main": "dist/browser.js",
   "module": "dist/browser.esm.js",
@@ -35,5 +35,8 @@
       "esm-bundler",
       "cjs"
     ]
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

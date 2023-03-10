@@ -3,6 +3,12 @@ import { BrowserOptionsFieldsTypes } from './types'
 import { safeStringify, toStringValidateOption } from '@mitojs/utils'
 import { ReportDataType } from '@mitojs/types'
 import { BaseTransport } from '@mitojs/core'
+import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
+
+const client = new ApolloClient({
+  uri: 'http://localhost:3001/graphql',
+  cache: new InMemoryCache(),
+});
 
 export class BrowserTransport extends BaseTransport<BrowserOptionsFieldsTypes> {
   configReportXhr: unknown
@@ -21,7 +27,26 @@ export class BrowserTransport extends BaseTransport<BrowserOptionsFieldsTypes> {
       if (typeof this.configReportXhr === 'function') {
         this.configReportXhr(xhr, data)
       }
-      xhr.send(safeStringify(data))
+      // xhr.send(safeStringify(data))
+      console.log("data", data);
+      const safeData = safeStringify(data) as any;
+      console.log("safeData", safeData);
+      client.mutate({
+        mutation: gql`
+          mutation webReport ($query: SdkReportRawDataInput!) {
+            webReport (query: $query)
+          }
+        `,
+        variables: {
+          'query':  {
+            authInfo: data.authInfo as string,
+            breadcrumb: (data.breadcrumb) as string,
+            data: (data.data) as string,
+            record: (data?.record) as string,
+            deviceInfo: (data?.deviceInfo) as string
+          }
+        }
+      })
     }
     this.queue.addTask(requestFun)
   }

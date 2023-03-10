@@ -1,5 +1,5 @@
 {
-  "name": "@mitojs/web",
+  "name": "@jfsonjs/web",
   "version": "3.0.1",
   "description": "A SDK For Monitoring Web(React、Vue) Errors",
   "author": "cjinhuo(https://github.com/cjinhuo)",
@@ -28,5 +28,8 @@
     "@mitojs/browser": "3.0.1",
     "@mitojs/react": "3.0.1",
     "@mitojs/vue": "3.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

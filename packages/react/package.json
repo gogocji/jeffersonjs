@@ -1,5 +1,5 @@
 {
-  "name": "@mitojs/react",
+  "name": "@jfsonjs/react",
   "version": "3.0.1",
   "description": "A SDK For Report React ErrorBoundary",
   "author": "cjinhuo",
@@ -31,5 +31,8 @@
     "@mitojs/core": "3.0.1",
     "@mitojs/utils": "3.0.1",
     "@mitojs/shared": "3.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
