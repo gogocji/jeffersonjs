@@ -1,6 +1,6 @@
 {
   "name": "@jfsonjs/browser",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "A SDK For Monitoring Browser Errors",
   "author": "gogocj",
   "license": "MIT",

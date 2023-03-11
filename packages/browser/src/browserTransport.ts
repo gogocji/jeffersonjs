@@ -42,9 +42,8 @@ export class BrowserTransport extends BaseTransport<BrowserOptionsFieldsTypes> {
           }
         })
       } catch (error) {
-        console.error('使用apollo client调用graphql请求异常：', error);
+        console.error('使用apollo client调用graphql请求异常：', error)
       }
-      
     }
     this.queue.addTask(requestFun)
   }
