@@ -1,6 +1,6 @@
 {
   "name": "@jfsonjs/browser",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "A SDK For Monitoring Browser Errors",
   "author": "gogocj",
   "license": "MIT",
@@ -26,7 +26,7 @@
   ],
   "dependencies": {
     "@mitojs/utils": "3.0.1",
-    "@mitojs/core": "3.0.1",
+    "@mitojs/core": "3.0.2",
     "@mitojs/shared": "3.0.1",
     "@mitojs/types": "3.0.1"
   },

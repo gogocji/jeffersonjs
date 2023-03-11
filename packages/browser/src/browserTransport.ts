@@ -3,12 +3,8 @@ import { BrowserOptionsFieldsTypes } from './types'
 import { safeStringify, toStringValidateOption } from '@mitojs/utils'
 import { ReportDataType } from '@mitojs/types'
 import { BaseTransport } from '@mitojs/core'
-import { ApolloClient, InMemoryCache, gql } from '@apollo/client'
-
-const client = new ApolloClient({
-  uri: 'http://localhost:3001/graphql',
-  cache: new InMemoryCache()
-})
+import { gql } from '@apollo/client'
+import graphQLClient from './apolloClient'
 
 export class BrowserTransport extends BaseTransport<BrowserOptionsFieldsTypes> {
   configReportXhr: unknown
@@ -28,22 +24,27 @@ export class BrowserTransport extends BaseTransport<BrowserOptionsFieldsTypes> {
         this.configReportXhr(xhr, data)
       }
       // xhr.send(safeStringify(data))
-      client.mutate({
-        mutation: gql`
-          mutation webReport($query: SdkReportRawDataInput!) {
-            webReport(query: $query)
+      try {
+        graphQLClient.mutate({
+          mutation: gql`
+            mutation webReport($query: SdkReportRawDataInput!) {
+              webReport(query: $query)
+            }
+          `,
+          variables: {
+            query: {
+              authInfo: data.authInfo as string,
+              breadcrumb: data.breadcrumb as string,
+              data: data.data as string,
+              record: data?.record as string,
+              deviceInfo: data?.deviceInfo as string
+            }
           }
-        `,
-        variables: {
-          query: {
-            authInfo: data.authInfo as string,
-            breadcrumb: data.breadcrumb as string,
-            data: data.data as string,
-            record: data?.record as string,
-            deviceInfo: data?.deviceInfo as string
-          }
-        }
-      })
+        })
+      } catch (error) {
+        console.error('使用apollo client调用graphql请求异常：', error);
+      }
+      
     }
     this.queue.addTask(requestFun)
   }
