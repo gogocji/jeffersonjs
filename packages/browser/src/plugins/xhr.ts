@@ -119,7 +119,7 @@ export async function httpTransformedDataConsumer(this: BrowserClient, transform
     })
     this.transport.send(transformedData, breadcrumbStack)
     // 清空breadcrumb
-    this.breadcrumb.clear();
+    this.breadcrumb.clear()
   }
 }
 

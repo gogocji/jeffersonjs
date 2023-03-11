@@ -69,6 +69,6 @@ export class BrowserClient extends BaseClient<BrowserOptionsFieldsTypes, EventTy
     })
     this.transport.send(error, breadcrumbStack)
     // 清空breadcrumb
-    this.breadcrumb.clear();
+    this.breadcrumb.clear()
   }
 }

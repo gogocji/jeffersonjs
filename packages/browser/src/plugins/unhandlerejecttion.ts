@@ -32,10 +32,15 @@ const unhandlerejectionPlugin: BasePluginType<BrowserEventTypes, BrowserClient> 
   },
   // eslint-disable-next-line @typescript-eslint/no-misused-promises
   async consumer(this: BrowserClient, transformedData: HttpTransformedType) {
-    const breadcrumbStack = await addBreadcrumbInBrowser.call(this, transformedData, BrowserBreadcrumbTypes.UNHANDLEDREJECTION, Severity.Error)
+    const breadcrumbStack = await addBreadcrumbInBrowser.call(
+      this,
+      transformedData,
+      BrowserBreadcrumbTypes.UNHANDLEDREJECTION,
+      Severity.Error
+    )
     this.transport.send(transformedData, breadcrumbStack)
     // 清空breadcrumb
-    this.breadcrumb.clear();
+    this.breadcrumb.clear()
   }
 }
 

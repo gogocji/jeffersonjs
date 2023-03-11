@@ -37,7 +37,7 @@ const errorPlugin: BasePluginType<BrowserEventTypes, BrowserClient> = {
     const breadcrumbStack = await addBreadcrumbInBrowser.call(this, transformedData, type, Severity.Error)
     this.transport.send(transformedData, breadcrumbStack)
     // 清空breadcrumb
-    this.breadcrumb.clear();
+    this.breadcrumb.clear()
   }
 }
 
