@@ -100,7 +100,7 @@ export function httpTransform(httpCollectedData: HttpCollectedType): HttpTransfo
   }
 }
 
-export function httpTransformedDataConsumer(this: BrowserClient, transformedData: HttpTransformedType) {
+export async function httpTransformedDataConsumer(this: BrowserClient, transformedData: HttpTransformedType) {
   const type = transformedData.request.httpType === HttpTypes.FETCH ? BrowserBreadcrumbTypes.FETCH : BrowserBreadcrumbTypes.XHR
   // time 是为了保持顺序，紧跟在点击事件后面
   const {
@@ -110,14 +110,16 @@ export function httpTransformedDataConsumer(this: BrowserClient, transformedData
   const isError = status === 0 || status === HTTP_CODE.BAD_REQUEST || status > HTTP_CODE.UNAUTHORIZED
   addBreadcrumbInBrowser.call(this, transformedData, type, Severity.Info, { time })
   if (isError) {
-    const breadcrumStack = this.breadcrumb.push({
+    const breadcrumbStack = await this.breadcrumb.push({
       type,
       category: BREADCRUMBCATEGORYS.EXCEPTION,
       data: transformedData,
       level: Severity.Error,
       time
     })
-    this.transport.send(transformedData, breadcrumStack)
+    this.transport.send(transformedData, breadcrumbStack)
+    // 清空breadcrumb
+    this.breadcrumb.clear();
   }
 }
 

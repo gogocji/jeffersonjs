@@ -68,5 +68,7 @@ export class BrowserClient extends BaseClient<BrowserOptionsFieldsTypes, EventTy
       level: Severity.fromString(level.toString())
     })
     this.transport.send(error, breadcrumbStack)
+    // 清空breadcrumb
+    this.breadcrumb.clear();
   }
 }

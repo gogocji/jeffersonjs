@@ -98,7 +98,7 @@ export abstract class BaseTransport<O extends BaseOptionsFieldsIntegrationType =
    */
   async send(data: any, breadcrumb: BreadcrumbPushData[] = []): Promise<void> {
     // 如果是埋点则不需要生成errorId
-    if (!data.isTrack) {
+    if (!data.isTrack || !data.isBreaadcrumbReport) {
       const errorId = createErrorId(data, this.apikey, this.maxDuplicateCount)
       if (!errorId) return
       data.errorId = errorId

@@ -28,9 +28,6 @@ export class BrowserTransport extends BaseTransport<BrowserOptionsFieldsTypes> {
         this.configReportXhr(xhr, data)
       }
       // xhr.send(safeStringify(data))
-      console.log('data', data)
-      const safeData = safeStringify(data) as any
-      console.log('safeData', safeData)
       client.mutate({
         mutation: gql`
           mutation webReport($query: SdkReportRawDataInput!) {

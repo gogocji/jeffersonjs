@@ -31,10 +31,13 @@ const errorPlugin: BasePluginType<BrowserEventTypes, BrowserClient> = {
     // code error
     return codeErrorTransform(errorEvent)
   },
-  consumer(transformedData: ReportDataType) {
+  // eslint-disable-next-line @typescript-eslint/no-misused-promises
+  async consumer(this: BrowserClient, transformedData: ReportDataType) {
     const type = transformedData.type === ErrorTypes.RESOURCE ? BrowserBreadcrumbTypes.RESOURCE : BrowserBreadcrumbTypes.CODE_ERROR
-    const breadcrumbStack = addBreadcrumbInBrowser.call(this, transformedData, type, Severity.Error)
+    const breadcrumbStack = await addBreadcrumbInBrowser.call(this, transformedData, type, Severity.Error)
     this.transport.send(transformedData, breadcrumbStack)
+    // 清空breadcrumb
+    this.breadcrumb.clear();
   }
 }
 
