@@ -1,6 +1,6 @@
 const instance = MITO.init({
   debug: true,
-  apikey: '1',
+  apikey: 'clf8z0qq00001tlg4alomxvzm',
   silentConsole: true,
   silentXhr: false,
   maxBreadcrumbs: 10,
@@ -9,6 +9,11 @@ const instance = MITO.init({
   enableTraceId: true,
   configReportXhr(xhr, reportData) {
     xhr.setRequestHeader('mito-header', 'test123')
-  }
+  },
+  // 注意：要写入userId
+  backTrackerId() {
+    // Test: 写死数据
+    return "clf91172o000xtllsh7sed0el"
+  },
 })
 window._MITO_ = instance
