@@ -107,6 +107,7 @@
     "@jfsonjs/types": "^3.0.3",
     "@jfsonjs/utils": "^3.0.3",
     "graphql": "^16.6.0",
+    "ua-parser-js": "^1.0.34",
     "web-vitals": "^3.3.0"
   }
 }

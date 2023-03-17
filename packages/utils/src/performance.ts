@@ -88,7 +88,7 @@ export function getResource() {
   if (performance.getEntriesByType) {
     const entries = performance.getEntriesByType('resource')
     // 过滤掉非静态资源的 fetch、 xmlhttprequest、beacon
-    let list = entries.filter((entry) => {
+    let list = entries.filter((entry: any) => {
       return ['fetch', 'xmlhttprequest', 'beacon'].indexOf(entry.initiatorType) === -1
     })
 

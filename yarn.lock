@@ -644,13 +644,23 @@
   "resolved" "https://registry.npmjs.org/@jfsonjs/shared/-/shared-3.0.2.tgz"
   "version" "3.0.2"
 
-"@jfsonjs/types@^3.0.3", "@jfsonjs/types@3.0.1", "@jfsonjs/types@3.0.3":
+"@jfsonjs/types@^3.0.3", "@jfsonjs/types@3.0.3":
   "integrity" "sha512-F8055zZ+Ou4eDRkA2cynac2ZJJqGcOmtAG7eZv9aA5iyl50PfKc48tDM449hf3FA5gM6aAj2XKhJO34sq3Vvpg=="
   "resolved" "https://registry.npmjs.org/@jfsonjs/types/-/types-3.0.3.tgz"
   "version" "3.0.3"
   dependencies:
     "@jfsonjs/shared" "3.0.2"
     "@mitojs/core" "3.0.1"
+    "@mitojs/utils" "3.0.1"
+    "@types/wechat-miniprogram" "^3.1.0"
+
+"@jfsonjs/types@3.0.1":
+  "integrity" "sha512-nvSC2RkrH14YBLoUUXC68EnkXXGy8MqbqRw/X1e32ALvX8QR8tjUbl0xIgpNS/16RDgzxGDPibQSj67Ps7XaMg=="
+  "resolved" "https://registry.npmjs.org/@jfsonjs/types/-/types-3.0.1.tgz"
+  "version" "3.0.1"
+  dependencies:
+    "@mitojs/core" "3.0.1"
+    "@mitojs/shared" "3.0.1"
     "@mitojs/utils" "3.0.1"
     "@types/wechat-miniprogram" "^3.1.0"
 
@@ -7308,6 +7318,11 @@
   "integrity" "sha512-DqGhF5IKoBl8WNf8C1gu8q0xZSInh9j1kJJMqT3a94w1JzVaBU4EXOSMrz9yDqMT0xt3selp83fuFMQ0uzv6qA=="
   "resolved" "https://registry.npmmirror.com/typescript/-/typescript-4.4.4.tgz"
   "version" "4.4.4"
+
+"ua-parser-js@^1.0.34":
+  "integrity" "sha512-K9mwJm/DaB6mRLZfw6q8IMXipcrmuT6yfhYmwhAkuh+81sChuYstYA+znlgaflUPaYUa3odxKPKGw6Vw/lANew=="
+  "resolved" "https://registry.npmmirror.com/ua-parser-js/-/ua-parser-js-1.0.34.tgz"
+  "version" "1.0.34"
 
 "uglify-js@^3.1.4":
   "integrity" "sha512-JmMFDME3iufZnBpyKL+uS78LRiC+mK55zWfM5f/pWBJfpOttXAqYfdDGRukYhJuyRinvPVAtUhvy7rlDybNtFg=="

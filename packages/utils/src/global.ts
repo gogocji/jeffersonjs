@@ -2,6 +2,7 @@ import { EventTypes } from '@jfsonjs/shared'
 import { Logger } from './logger'
 import { DeviceInfo } from '@jfsonjs/types'
 import { variableTypeDetection } from './is'
+import { UAParser } from 'ua-parser-js';
 
 /**
  *MITO的全局变量
@@ -42,6 +43,8 @@ export function getGlobal<T>() {
 // whether it is right use &
 const _global = getGlobal<Window & WechatMiniprogram.Wx>()
 const _support = getGlobalMitoSupport()
+// const uaResult = new UAParser().getResult();
+
 /**
  * 获取全局变量__MITO__的引用地址
  *
@@ -51,6 +54,22 @@ function getGlobalMitoSupport(): MitoSupport {
   _global.__MITO__ = _global.__MITO__ || ({} as MitoSupport)
   return _global.__MITO__
 }
+
+// 获取设备信息
+// _support.deviceInfo = {
+//   // 浏览器版本号 107.0.0.0
+//   browser_version: uaResult.browser.version,
+//   // Chrome
+//   browser: uaResult.browser.name,
+//   // 电脑系统 10
+//   os_version: uaResult.os.version,
+//   // Windows
+//   os: uaResult.os.name,
+//   ua: uaResult.ua,
+//   device: uaResult.device.model ? uaResult.device.model : 'Unknow',
+//   // pc
+//   device_type: uaResult.device.type ? uaResult.device.type : 'Pc'
+// };
 
 export { _global, _support }
 
