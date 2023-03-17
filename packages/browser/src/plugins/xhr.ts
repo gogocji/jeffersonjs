@@ -1,4 +1,12 @@
-import { BREADCRUMBCATEGORYS, BrowserBreadcrumbTypes, BrowserEventTypes, ErrorTypes, globalVar, HttpTypes, HTTP_CODE } from '@jfsonjs/shared'
+import {
+  BREADCRUMBCATEGORYS,
+  BrowserBreadcrumbTypes,
+  BrowserEventTypes,
+  ErrorTypes,
+  globalVar,
+  HttpTypes,
+  HTTP_CODE
+} from '@jfsonjs/shared'
 import {
   getTimestamp,
   replaceOld,

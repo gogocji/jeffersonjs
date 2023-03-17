@@ -7,11 +7,11 @@ const performancePlugin: BasePluginType<BrowserEventTypes, BrowserClient> = {
   name: BrowserEventTypes.PERFORMANCE,
   monitor(notify) {
     // 获取FCP、LCP、TTFB、FID等指标
-    getWebVitals(res => {
+    getWebVitals((res) => {
       // name指标名称、rating 评级、value数值
-      console.log('res', res);
-      notify(BrowserEventTypes.PERFORMANCE, res);
-    });
+      console.log('res', res)
+      notify(BrowserEventTypes.PERFORMANCE, res)
+    })
   },
   transform(performanceData: PerformanceDataType) {
     return {
@@ -23,13 +23,13 @@ const performancePlugin: BasePluginType<BrowserEventTypes, BrowserClient> = {
         rating: performanceData.rating,
         value: performanceData.value
       }
-    };
+    }
   },
   // eslint-disable-next-line @typescript-eslint/no-misused-promises
   consumer(this: BrowserClient, performanceData: ReportDataType) {
-    console.log('performanceData', performanceData);
+    console.log('performanceData', performanceData)
     this.transport.send(performanceData)
   }
 }
 
-export default performancePlugin;
+export default performancePlugin
