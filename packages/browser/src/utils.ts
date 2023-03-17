@@ -1,5 +1,5 @@
-import { BrowserBreadcrumbTypes } from '@mitojs/shared'
-import { getBreadcrumbCategoryInBrowser, Severity } from '@mitojs/utils'
+import { BrowserBreadcrumbTypes } from '@jfsonjs/shared'
+import { getBreadcrumbCategoryInBrowser, Severity } from '@jfsonjs/utils'
 import { BrowserClient } from './browserClient'
 import { BrowserTransport } from './browserTransport'
 
@@ -22,7 +22,7 @@ export async function addBreadcrumbInBrowser(
   // 面包屑超过十个就上报
   if (breadcrumbStack.length >= 10) {
     try {
-      await this.transport.send({ isBreaadcrumbReport: true }, breadcrumbStack)
+      await this.transport.send({}, breadcrumbStack)
       this.breadcrumb.clear()
       return []
     } catch (error) {

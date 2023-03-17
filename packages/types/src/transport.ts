@@ -1,4 +1,4 @@
-import { ErrorTypes } from '@mitojs/shared'
+import { ErrorTypes } from '@jfsonjs/shared'
 import { BreadcrumbPushData } from './breadcrumb'
 import { HttpTransformedType } from './http'
 import { DeviceInfo } from './wx'
@@ -33,6 +33,15 @@ export interface BaseTransformType {
   url: string
 }
 
+export interface PerformanceDataType {
+  // 指标名
+  name?: string,
+  // 速率（poor、fast等）
+  rating?: string,
+  // 指标值
+  value?: string
+}
+
 export interface ReportDataType extends Partial<HttpTransformedType> {
   stack?: any
   errorId?: number
@@ -40,5 +49,8 @@ export interface ReportDataType extends Partial<HttpTransformedType> {
   componentName?: string
   propsData?: any
   // logError 手动报错 MITO.log
-  customTag?: string
+  customTag?: string,
+  // performance
+  // 性能指标名（比如FCP）
+  performanceData?: PerformanceDataType
 }

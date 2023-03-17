@@ -1,8 +1,8 @@
-import { MethodTypes, ToStringTypes } from '@mitojs/shared'
+import { MethodTypes, ToStringTypes } from '@jfsonjs/shared'
 import { BrowserOptionsFieldsTypes } from './types'
-import { safeStringify, toStringValidateOption } from '@mitojs/utils'
-import { ReportDataType } from '@mitojs/types'
-import { BaseTransport } from '@mitojs/core'
+import { safeStringify, toStringValidateOption } from '@jfsonjs/utils'
+import { ReportDataType } from '@jfsonjs/types'
+import { BaseTransport } from '@jfsonjs/core'
 import { gql } from '@apollo/client'
 import graphQLClient from './apolloClient'
 

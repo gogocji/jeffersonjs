@@ -28,9 +28,9 @@
     "react": ">=16.8.0"
   },
   "dependencies": {
-    "@mitojs/core": "3.0.1",
-    "@mitojs/utils": "3.0.1",
-    "@mitojs/shared": "3.0.1"
+    "@jfsonjs/core": "3.0.3",
+    "@jfsonjs/utils": "3.0.3",
+    "@jfsonjs/shared": "3.0.2"
   },
   "publishConfig": {
     "access": "public"

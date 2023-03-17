@@ -101,6 +101,12 @@
   },
   "dependencies": {
     "@apollo/client": "^3.7.10",
-    "graphql": "^16.6.0"
+    "@jfsonjs/browser": "^3.0.5",
+    "@jfsonjs/core": "^3.0.3",
+    "@jfsonjs/shared": "^3.0.2",
+    "@jfsonjs/types": "^3.0.3",
+    "@jfsonjs/utils": "^3.0.3",
+    "graphql": "^16.6.0",
+    "web-vitals": "^3.3.0"
   }
 }

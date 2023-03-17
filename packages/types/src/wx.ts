@@ -1,4 +1,4 @@
-import { TrackActionType } from '@mitojs/shared'
+import { TrackActionType } from '@jfsonjs/shared'
 
 export interface DeviceInfo {
   //网络类型: 4g,3g,5g,wifi

@@ -1,6 +1,6 @@
-import { BREADCRUMBCATEGORYS, BrowserBreadcrumbTypes } from '@mitojs/shared'
-import { ReportDataType } from '@mitojs/types'
-import { Severity, sleepRun } from '@mitojs/utils'
+import { BREADCRUMBCATEGORYS, BrowserBreadcrumbTypes } from '@jfsonjs/shared'
+import { ReportDataType } from '@jfsonjs/types'
+import { Severity, sleepRun } from '@jfsonjs/utils'
 import { BrowserClient } from '../../browserClient'
 import unhandlerejectionPlugin from '../../plugins/unhandlerejecttion'
 

@@ -1,6 +1,6 @@
-import { BrowserEventTypes } from '@mitojs/shared'
-import { getLocationHref, replaceOld, supportsHistory, _global } from '@mitojs/utils'
-import { BasePluginType, RouteChangeCollectType, voidFun } from '@mitojs/types'
+import { BrowserEventTypes } from '@jfsonjs/shared'
+import { getLocationHref, replaceOld, supportsHistory, _global } from '@jfsonjs/utils'
+import { BasePluginType, RouteChangeCollectType, voidFun } from '@jfsonjs/types'
 import { BrowserClient } from '../browserClient'
 import { routeTransform, routeTransformedConsumer } from './hashRoute'
 

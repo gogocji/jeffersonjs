@@ -1,6 +1,6 @@
-import { BREADCRUMBCATEGORYS, BrowserBreadcrumbTypes, BrowserEventTypes, HttpTypes, MethodTypes } from '@mitojs/shared'
-import { HttpCollectedType } from '@mitojs/types'
-import { getBreadcrumbCategoryInBrowser, Severity } from '@mitojs/utils'
+import { BREADCRUMBCATEGORYS, BrowserBreadcrumbTypes, BrowserEventTypes, HttpTypes, MethodTypes } from '@jfsonjs/shared'
+import { HttpCollectedType } from '@jfsonjs/types'
+import { getBreadcrumbCategoryInBrowser, Severity } from '@jfsonjs/utils'
 import { BrowserClient } from '../../browserClient'
 import xhrPlugin, { httpTransform, httpTransformedDataConsumer } from '../../plugins/xhr'
 

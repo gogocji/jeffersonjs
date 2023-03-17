@@ -1,6 +1,6 @@
-import { BrowserBreadcrumbTypes, BrowserEventTypes } from '@mitojs/shared'
-import { isExistProperty, on, parseUrlToObj, _global } from '@mitojs/utils'
-import { BasePluginType, RouteChangeCollectType } from '@mitojs/types'
+import { BrowserBreadcrumbTypes, BrowserEventTypes } from '@jfsonjs/shared'
+import { isExistProperty, on, parseUrlToObj, _global } from '@jfsonjs/utils'
+import { BasePluginType, RouteChangeCollectType } from '@jfsonjs/types'
 import { BrowserClient } from '../browserClient'
 import { addBreadcrumbInBrowser } from '../utils'
 

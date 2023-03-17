@@ -1,4 +1,4 @@
-import { ToStringTypes } from '@mitojs/shared'
+import { ToStringTypes } from '@jfsonjs/shared'
 
 export const nativeToString = Object.prototype.toString
 export function isType(type: string) {

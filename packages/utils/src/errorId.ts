@@ -1,5 +1,5 @@
-import { ReportDataType } from '@mitojs/types'
-import { BrowserEventTypes, ErrorTypes } from '@mitojs/shared'
+import { ReportDataType } from '@jfsonjs/types'
+import { BrowserEventTypes, ErrorTypes } from '@jfsonjs/shared'
 import { variableTypeDetection } from './is'
 const allErrorNumber: unknown = {}
 /**

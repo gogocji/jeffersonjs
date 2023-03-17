@@ -8,9 +8,9 @@ import {
   WxEventTypes,
   BREADCRUMBCATEGORYS,
   WxBaseEventTypes
-} from '@mitojs/shared'
+} from '@jfsonjs/shared'
 import { fromHttpStatus, getCurrentRoute, getRealPath, getTimestamp, Severity, SpanStatus, variableTypeDetection } from '@mitojs/utils'
-import { BasePluginType, HttpCollectedType, HttpTransformedType } from '@mitojs/types'
+import { BasePluginType, HttpCollectedType, HttpTransformedType } from '@jfsonjs/types'
 import { WxClient } from '../wxClient'
 import { addBreadcrumbInWx } from '../utils'
 
@@ -182,7 +182,7 @@ export function httpTransformedDataConsumer(this: WxClient, transformedData: Htt
       level: Severity.Error,
       time
     })
-    this.transport.send(transformedData, breadcrumbStack)
+    this.transport.send(transformedData, breadcrumbStack, true)
   }
 }
 

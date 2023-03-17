@@ -25,9 +25,9 @@
     "monitor"
   ],
   "dependencies": {
-    "@mitojs/utils": "3.0.1",
-    "@mitojs/shared": "3.0.1",
-    "@mitojs/types": "3.0.1"
+    "@jfsonjs/utils": "3.0.3",
+    "@jfsonjs/shared": "3.0.2",
+    "@jfsonjs/types": "3.0.3"
   },
   "publishConfig": {
     "access": "public"

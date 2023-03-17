@@ -1,7 +1,7 @@
-import { ToStringTypes } from '@mitojs/shared'
+import { ToStringTypes } from '@jfsonjs/shared'
 import { toStringValidateOption, _support } from '@mitojs/utils'
-import { ReportDataType } from '@mitojs/types'
-import { BaseTransport } from '@mitojs/core'
+import { ReportDataType } from '@jfsonjs/types'
+import { BaseTransport } from '@jfsonjs/core'
 import { WxOptionsFieldsTypes } from './types'
 
 export class WxTransport extends BaseTransport<WxOptionsFieldsTypes> {

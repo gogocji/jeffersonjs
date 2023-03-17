@@ -1,5 +1,5 @@
-import { Breadcrumb } from '@mitojs/core'
-import { sleepRun } from '@mitojs/utils'
+import { Breadcrumb } from '@jfsonjs/core'
+import { sleepRun } from '@jfsonjs/utils'
 import { ErrorTypes } from 'packages/shared/src/constant'
 import { ReportDataType } from 'packages/types/src/transport'
 import { BrowserTransport } from '../browserTransport'

@@ -611,6 +611,58 @@
     "@types/yargs" "^15.0.0"
     "chalk" "^4.0.0"
 
+"@jfsonjs/browser@^3.0.5":
+  "integrity" "sha512-RZVQ1+7wuh8weMUGGRuTAm6QsZgshuRVbNfD/i4earMRCUZwEjQCZsVjN+Z/PBKGuLvFn9i+0cc9aieMAFIzpw=="
+  "resolved" "https://registry.npmjs.org/@jfsonjs/browser/-/browser-3.0.5.tgz"
+  "version" "3.0.5"
+  dependencies:
+    "@jfsonjs/core" "3.0.2"
+    "@jfsonjs/shared" "3.0.2"
+    "@jfsonjs/types" "3.0.3"
+    "@jfsonjs/utils" "3.0.3"
+
+"@jfsonjs/core@^3.0.3":
+  "integrity" "sha512-L5E9toOQgmW0UAYSwIzWBHx5p5GvXo51IGQg+Bt/OP3CiYi15OMZeVrbgOiPtdyW7klgzMGR9VQ5tGYBliqNNA=="
+  "resolved" "https://registry.npmjs.org/@jfsonjs/core/-/core-3.0.3.tgz"
+  "version" "3.0.3"
+  dependencies:
+    "@jfsonjs/shared" "3.0.2"
+    "@jfsonjs/types" "3.0.3"
+    "@mitojs/utils" "3.0.1"
+
+"@jfsonjs/core@3.0.2":
+  "integrity" "sha512-SUMYIA2ItK3F2ZiIQWpBleKOt1TMC7c8jcWx/gC4i8cSLhDXoclo/+IGgaz7jOGhHFTX7Bpf9JNmuRzHD21D9w=="
+  "resolved" "https://registry.npmjs.org/@jfsonjs/core/-/core-3.0.2.tgz"
+  "version" "3.0.2"
+  dependencies:
+    "@mitojs/shared" "3.0.1"
+    "@mitojs/types" "3.0.1"
+    "@mitojs/utils" "3.0.1"
+
+"@jfsonjs/shared@^3.0.2", "@jfsonjs/shared@3.0.2":
+  "integrity" "sha512-Tcw89AgLBr6lM2KRgCijRlzm/L0Ayedx8iNID3bPhFV6pqFrSYkXJ7CGgMiCc1qfLM+CgT1LpRRq+35R0vtLcA=="
+  "resolved" "https://registry.npmjs.org/@jfsonjs/shared/-/shared-3.0.2.tgz"
+  "version" "3.0.2"
+
+"@jfsonjs/types@^3.0.3", "@jfsonjs/types@3.0.1", "@jfsonjs/types@3.0.3":
+  "integrity" "sha512-F8055zZ+Ou4eDRkA2cynac2ZJJqGcOmtAG7eZv9aA5iyl50PfKc48tDM449hf3FA5gM6aAj2XKhJO34sq3Vvpg=="
+  "resolved" "https://registry.npmjs.org/@jfsonjs/types/-/types-3.0.3.tgz"
+  "version" "3.0.3"
+  dependencies:
+    "@jfsonjs/shared" "3.0.2"
+    "@mitojs/core" "3.0.1"
+    "@mitojs/utils" "3.0.1"
+    "@types/wechat-miniprogram" "^3.1.0"
+
+"@jfsonjs/utils@^3.0.3", "@jfsonjs/utils@3.0.3":
+  "integrity" "sha512-vEAzARv9CgKS3tbhk9nVfhMHNxpEaUKLU2zEqyS+df19ModKYHZN4RWVxiVo8RJHuqjbi8z5OifZAb1TlgV9Lw=="
+  "resolved" "https://registry.npmjs.org/@jfsonjs/utils/-/utils-3.0.3.tgz"
+  "version" "3.0.3"
+  dependencies:
+    "@jfsonjs/shared" "3.0.2"
+    "@jfsonjs/types" "3.0.3"
+    "web-vitals" "^3.3.0"
+
 "@jimp/bmp@^0.6.8":
   "integrity" "sha512-uxVgSkI62uAzk5ZazYHEHBehow590WAkLKmDXLzkr/XP/Hv2Fx1T4DKwJ/15IY5ktq5VAhAUWGXTyd8KWFsx7w=="
   "resolved" "https://registry.npmmirror.com/@jimp/bmp/-/bmp-0.6.8.tgz"
@@ -967,6 +1019,38 @@
   "integrity" "sha512-WrHvO8PDL8wd8T2+zBGKrMwVL5IyzR3ryWUsl0PXgEV0QHup4mTLi0QcATefGI6Gx9Anu7vthPyyyLpY0EpiQg=="
   "resolved" "https://registry.npmmirror.com/@microsoft/tsdoc/-/tsdoc-0.13.2.tgz"
   "version" "0.13.2"
+
+"@mitojs/core@3.0.1":
+  "integrity" "sha512-eUJYaQ4+Z7lbnUZ+wbwoHTu5LASPoUp8g0Slv0djfJEQ/nWWDZ0ftwVtWt+7019Y2zBXkyybdsPqUZAdBEmKEA=="
+  "resolved" "https://registry.npmjs.org/@mitojs/core/-/core-3.0.1.tgz"
+  "version" "3.0.1"
+  dependencies:
+    "@jfsonjs/types" "3.0.1"
+    "@mitojs/shared" "3.0.1"
+    "@mitojs/utils" "3.0.1"
+
+"@mitojs/shared@3.0.1":
+  "integrity" "sha512-WPZ0QPTnNroiRDoFfPf4tfJpqkl4LMf/Nv1Q10+NNfCJd82nraIT+uPEvU4B6L6WRdpoQUoLZ9ImwSC1h+/yKw=="
+  "resolved" "https://registry.npmjs.org/@mitojs/shared/-/shared-3.0.1.tgz"
+  "version" "3.0.1"
+
+"@mitojs/types@3.0.1":
+  "integrity" "sha512-2qvMdmSqnkuQI3NohaF60nYPWzh+A4lzNMC65O+Jftoo3q8Kk0NC7mBSQUQp2wyLlcL1kUgObo614Chs/2Zg6g=="
+  "resolved" "https://registry.npmjs.org/@mitojs/types/-/types-3.0.1.tgz"
+  "version" "3.0.1"
+  dependencies:
+    "@mitojs/core" "3.0.1"
+    "@mitojs/shared" "3.0.1"
+    "@mitojs/utils" "3.0.1"
+    "@types/wechat-miniprogram" "^3.1.0"
+
+"@mitojs/utils@3.0.1":
+  "integrity" "sha512-HpIJnhuv+AwMegK6LO/F9NtNiLMARqFw04e4bO1Jryqb9IOCFxKg5ZzQ3tEP9kj7ax797XL46zZjRbkbV3hKcQ=="
+  "resolved" "https://registry.npmjs.org/@mitojs/utils/-/utils-3.0.1.tgz"
+  "version" "3.0.1"
+  dependencies:
+    "@mitojs/shared" "3.0.1"
+    "@mitojs/types" "3.0.1"
 
 "@nodelib/fs.scandir@2.1.5":
   "integrity" "sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g=="
@@ -7400,6 +7484,11 @@
   "version" "1.0.1"
   dependencies:
     "defaults" "^1.0.3"
+
+"web-vitals@^3.3.0":
+  "integrity" "sha512-GZsEmJBNclIpViS/7QVOTr7Kbt4BgLeR7kQ5zCCtJVuiWsA+K6xTXaoEXssvl8yYFICEyNmA2Nr+vgBYTnS4bA=="
+  "resolved" "https://registry.npmjs.org/web-vitals/-/web-vitals-3.3.0.tgz"
+  "version" "3.3.0"
 
 "webidl-conversions@^3.0.0":
   "integrity" "sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ=="

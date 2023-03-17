@@ -7,13 +7,13 @@ import {
   MitoLog,
   SDK_NAME,
   SDK_VERSION
-} from '@mitojs/shared'
+} from '@jfsonjs/shared'
 import puppeteer from 'puppeteer'
-import { BreadcrumbPushData, ReportDataType, TransportDataType } from '@mitojs/types'
+import { BreadcrumbPushData, ReportDataType, TransportDataType } from '@jfsonjs/types'
 import { SpanStatus, Severity } from '@mitojs/utils'
 import { ServerUrls } from '../../../examples/server/config'
 import { jsUrl } from '@/test/config'
-import { BrowserClient } from '@mitojs/browser'
+import { BrowserClient } from '@jfsonjs/browser'
 
 describe('Native JS e2e:', () => {
   const timeout = 3000

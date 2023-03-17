@@ -1,5 +1,5 @@
-import { ErrorTypes, WxAppEvents, WxBreadcrumbTypes, WxEventTypes } from '@mitojs/shared'
-import { BasePluginType, ReportDataType, voidFun } from '@mitojs/types'
+import { ErrorTypes, WxAppEvents, WxBreadcrumbTypes, WxEventTypes } from '@jfsonjs/shared'
+import { BasePluginType, ReportDataType, voidFun } from '@jfsonjs/types'
 import {
   extractErrorStack,
   getCurrentRoute,
@@ -87,7 +87,7 @@ wxAppPluginMap.set(WxAppEvents.AppOnError, {
   },
   consumer(transformedData: ReportDataType) {
     const breadcrumbStack = addBreadcrumbInWx.call(this, transformedData, WxBreadcrumbTypes.CODE_ERROR, Severity.Error)
-    this.transport.send(transformedData, breadcrumbStack)
+    this.transport.send(transformedData, breadcrumbStack, true)
   }
 })
 
@@ -124,7 +124,7 @@ wxAppPluginMap.set(WxAppEvents.AppOnUnhandledRejection, {
   },
   consumer(transformedData: ReportDataType) {
     const breadcrumbStack = addBreadcrumbInWx.call(this, transformedData, WxBreadcrumbTypes.UNHANDLEDREJECTION, Severity.Error)
-    this.transport.send(transformedData, breadcrumbStack)
+    this.transport.send(transformedData, breadcrumbStack, true)
   }
 })
 

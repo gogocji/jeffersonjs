@@ -1,6 +1,6 @@
-import { BREADCRUMBCATEGORYS, BrowserBreadcrumbTypes, BrowserEventTypes } from '@mitojs/shared'
-import { RouteChangeCollectType } from '@mitojs/types'
-import { on, _global } from '@mitojs/utils'
+import { BREADCRUMBCATEGORYS, BrowserBreadcrumbTypes, BrowserEventTypes } from '@jfsonjs/shared'
+import { RouteChangeCollectType } from '@jfsonjs/types'
+import { on, _global } from '@jfsonjs/utils'
 import { BrowserClient } from '../../browserClient'
 import hashRoutePlugin from '../../plugins/hashRoute'
 

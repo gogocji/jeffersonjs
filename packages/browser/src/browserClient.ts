@@ -1,4 +1,4 @@
-import { Breadcrumb, BaseClient } from '@mitojs/core'
+import { Breadcrumb, BaseClient } from '@jfsonjs/core'
 import {
   BrowserBreadcrumbTypes,
   BrowserEventTypes,
@@ -8,7 +8,7 @@ import {
   MitoLogEmptyMsg,
   MitoLogEmptyTag,
   Silent
-} from '@mitojs/shared'
+} from '@jfsonjs/shared'
 import {
   extractErrorStack,
   firstStrtoUppercase,
@@ -18,8 +18,8 @@ import {
   isError,
   Severity,
   unknownToString
-} from '@mitojs/utils'
-import { LogTypes } from '@mitojs/types'
+} from '@jfsonjs/utils'
+import { LogTypes } from '@jfsonjs/types'
 import { BrowserOptions } from './browserOptions'
 import { BrowserTransport } from './browserTransport'
 import { BrowserOptionsFieldsTypes } from './types'
@@ -67,7 +67,7 @@ export class BrowserClient extends BaseClient<BrowserOptionsFieldsTypes, EventTy
       data: message,
       level: Severity.fromString(level.toString())
     })
-    this.transport.send(error, breadcrumbStack)
+    this.transport.send(error, breadcrumbStack, true)
     // 清空breadcrumb
     this.breadcrumb.clear()
   }

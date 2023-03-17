@@ -1,4 +1,4 @@
-import { BREADCRUMBCATEGORYS, BrowserBreadcrumbTypes, ErrorTypes } from '@mitojs/shared'
+import { BREADCRUMBCATEGORYS, BrowserBreadcrumbTypes, ErrorTypes } from '@jfsonjs/shared'
 import { getTimestamp, getUrlWithEnv } from './helpers'
 import { Severity } from './Severity'
 

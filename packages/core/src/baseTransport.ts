@@ -1,6 +1,6 @@
-import { logger, Queue, isInclude, createErrorId, isEmpty, validateOptionsAndSet } from '@mitojs/utils'
-import { SDK_NAME, SDK_VERSION, ToStringTypes } from '@mitojs/shared'
-import { AuthInfo, BaseOptionsFieldsIntegrationType, BreadcrumbPushData, ReportDataType, TransportDataType } from '@mitojs/types'
+import { logger, Queue, isInclude, createErrorId, isEmpty, validateOptionsAndSet } from '@jfsonjs/utils'
+import { SDK_NAME, SDK_VERSION, ToStringTypes } from '@jfsonjs/shared'
+import { AuthInfo, BaseOptionsFieldsIntegrationType, BreadcrumbPushData, ReportDataType, TransportDataType } from '@jfsonjs/types'
 
 /**
  * 传输数据抽象类
@@ -93,12 +93,13 @@ export abstract class BaseTransport<O extends BaseOptionsFieldsIntegrationType =
    *
    * @param {*} data
    * @param {BreadcrumbPushData[]} breadcrumb
+   * @param isError 当前上报数据是否是异常
    * @return {*}
    * @memberof BaseTransport
    */
-  async send(data: any, breadcrumb: BreadcrumbPushData[] = []): Promise<void> {
+  async send(data: any, breadcrumb: BreadcrumbPushData[] = [], isError = false): Promise<void> {
     // 如果是埋点则不需要生成errorId
-    if (!data.isTrack || !data.isBreaadcrumbReport) {
+    if (!data.isTrack || isError) {
       const errorId = createErrorId(data, this.apikey, this.maxDuplicateCount)
       if (!errorId) return
       data.errorId = errorId

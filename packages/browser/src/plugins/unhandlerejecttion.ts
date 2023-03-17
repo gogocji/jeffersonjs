@@ -1,6 +1,6 @@
-import { BrowserBreadcrumbTypes, BrowserEventTypes, ErrorTypes } from '@mitojs/shared'
-import { extractErrorStack, getLocationHref, getTimestamp, isError, on, Severity, unknownToString, _global } from '@mitojs/utils'
-import { BasePluginType, HttpTransformedType, ReportDataType } from '@mitojs/types'
+import { BrowserBreadcrumbTypes, BrowserEventTypes, ErrorTypes } from '@jfsonjs/shared'
+import { extractErrorStack, getLocationHref, getTimestamp, isError, on, Severity, unknownToString, _global } from '@jfsonjs/utils'
+import { BasePluginType, HttpTransformedType, ReportDataType } from '@jfsonjs/types'
 import { BrowserClient } from '../browserClient'
 import { addBreadcrumbInBrowser } from '../utils'
 
@@ -38,7 +38,7 @@ const unhandlerejectionPlugin: BasePluginType<BrowserEventTypes, BrowserClient> 
       BrowserBreadcrumbTypes.UNHANDLEDREJECTION,
       Severity.Error
     )
-    this.transport.send(transformedData, breadcrumbStack)
+    this.transport.send(transformedData, breadcrumbStack, true)
     // 清空breadcrumb
     this.breadcrumb.clear()
   }

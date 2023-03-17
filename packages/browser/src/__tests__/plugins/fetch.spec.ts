@@ -1,5 +1,5 @@
-import { BREADCRUMBCATEGORYS, BrowserBreadcrumbTypes, BrowserEventTypes } from '@mitojs/shared'
-import { getBreadcrumbCategoryInBrowser } from '@mitojs/utils'
+import { BREADCRUMBCATEGORYS, BrowserBreadcrumbTypes, BrowserEventTypes } from '@jfsonjs/shared'
+import { getBreadcrumbCategoryInBrowser } from '@jfsonjs/utils'
 import { BrowserClient } from '../../browserClient'
 import fetchPlugin from '../../plugins/fetch'
 import fetch from 'node-fetch'

@@ -1,6 +1,6 @@
-import { ToStringTypes } from '@mitojs/shared'
-import { logger, getTimestamp, silentConsoleScope, toStringValidateOption } from '@mitojs/utils'
-import { BaseOptionsFieldsIntegrationType, BreadcrumbPushData } from '@mitojs/types'
+import { ToStringTypes } from '@jfsonjs/shared'
+import { logger, getTimestamp, silentConsoleScope, toStringValidateOption } from '@jfsonjs/utils'
+import { BaseOptionsFieldsIntegrationType, BreadcrumbPushData } from '@jfsonjs/types'
 
 /**
  * 用户行为栈存储，实体类

@@ -1,4 +1,4 @@
-import { Subscribe } from '@mitojs/core'
+import { Subscribe } from '@jfsonjs/core'
 import { BrowserEventTypes } from 'packages/shared/src'
 
 describe('core/subscribe.ts', () => {

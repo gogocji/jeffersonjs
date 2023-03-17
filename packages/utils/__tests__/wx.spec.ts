@@ -1,4 +1,4 @@
-import { BREADCRUMBCATEGORYS, ErrorTypes, WxBreadcrumbTypes } from '@mitojs/shared'
+import { BREADCRUMBCATEGORYS, ErrorTypes, WxBreadcrumbTypes } from '@jfsonjs/shared'
 import { getBreadcrumbCategoryInWx, parseErrorString } from '../src/wx'
 
 describe('wx.ts', () => {

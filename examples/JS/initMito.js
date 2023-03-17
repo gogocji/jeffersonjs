@@ -1,6 +1,6 @@
 const instance = MITO.init({
   debug: true,
-  apikey: 'clf8z0qq00001tlg4alomxvzm',
+  apikey: 'clf9e42r40004tlpom1u8ggx3',
   silentConsole: true,
   silentXhr: false,
   maxBreadcrumbs: 10,
@@ -13,7 +13,7 @@ const instance = MITO.init({
   // 注意：要写入userId
   backTrackerId() {
     // Test: 写死数据
-    return "clf91172o000xtllsh7sed0el"
+    return "clf9e3tcg0000tlpofanyndi8"
   },
 })
 window._MITO_ = instance

@@ -1,5 +1,5 @@
-import { BREADCRUMBCATEGORYS, WxBreadcrumbTypes, ErrorTypes } from '@mitojs/shared'
-import { WxParsedErrorType } from '@mitojs/types'
+import { BREADCRUMBCATEGORYS, WxBreadcrumbTypes, ErrorTypes } from '@jfsonjs/shared'
+import { WxParsedErrorType } from '@jfsonjs/types'
 
 /**
  * 解析字符串错误信息，返回message、name、stack

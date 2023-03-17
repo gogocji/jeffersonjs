@@ -1,5 +1,5 @@
-import { ErrorTypes, HttpTypes } from '@mitojs/shared'
-import { ReportDataType } from '@mitojs/types'
+import { ErrorTypes, HttpTypes } from '@jfsonjs/shared'
+import { ReportDataType } from '@jfsonjs/types'
 import {
   createErrorId,
   getFlutterRealOrigin,

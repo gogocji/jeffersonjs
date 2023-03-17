@@ -1,9 +1,9 @@
-import { BaseBreadcrumbTypes, BREADCRUMBCATEGORYS, BrowserBreadcrumbTypes, ErrorTypes, SDK_NAME, SDK_VERSION } from '@mitojs/shared'
+import { BaseBreadcrumbTypes, BREADCRUMBCATEGORYS, BrowserBreadcrumbTypes, ErrorTypes, SDK_NAME, SDK_VERSION } from '@jfsonjs/shared'
 import { vueUrl } from '@/test/config'
-import { TransportDataType, ReportDataType } from '@mitojs/types'
+import { TransportDataType, ReportDataType } from '@jfsonjs/types'
 import { Severity } from '@mitojs/utils'
 import puppeteer from 'puppeteer'
-import { BrowserClient } from '@mitojs/browser'
+import { BrowserClient } from '@jfsonjs/browser'
 
 describe('Vue e2e', () => {
   const timeout = 3000

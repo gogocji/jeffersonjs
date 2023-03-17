@@ -1,5 +1,5 @@
-import { WxPageEvents, WxBreadcrumbTypes, WxEventTypes } from '@mitojs/shared'
-import { BasePluginType, voidFun } from '@mitojs/types'
+import { WxPageEvents, WxBreadcrumbTypes, WxEventTypes } from '@jfsonjs/shared'
+import { BasePluginType, voidFun } from '@jfsonjs/types'
 import { firstStrtoLowerCase, isEmptyObject, replaceOld } from '@mitojs/utils'
 import { WxLifeCycleBreadcrumb, WxOnShareAppMessageBreadcrumb, WxOnTabItemTapBreadcrumb } from '../types'
 import { addBreadcrumbInWx, getCurrentPagesPop } from '../utils'

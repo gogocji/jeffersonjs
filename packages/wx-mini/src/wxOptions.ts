@@ -1,5 +1,5 @@
-import { BaseOptions } from '@mitojs/core'
-import { ToStringTypes } from '@mitojs/shared'
+import { BaseOptions } from '@jfsonjs/core'
+import { ToStringTypes } from '@jfsonjs/shared'
 import { validateOptionsAndSet } from '@mitojs/utils'
 import { WxOptionsFieldsTypes } from './types'
 

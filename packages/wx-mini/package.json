@@ -25,10 +25,10 @@
     "monitor"
   ],
   "dependencies": {
-    "@mitojs/core": "3.0.1",
-    "@mitojs/utils": "3.0.1",
-    "@mitojs/shared": "3.0.1",
-    "@mitojs/types": "3.0.1",
+    "@jfsonjs/core": "3.0.3",
+    "@jfsonjs/utils": "3.0.3",
+    "@jfsonjs/shared": "3.0.2",
+    "@jfsonjs/types": "3.0.3",
     "@types/wechat-miniprogram": "^3.1.0"
   }
 }

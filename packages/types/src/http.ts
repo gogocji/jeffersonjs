@@ -1,4 +1,4 @@
-import { HttpTypes } from '@mitojs/shared'
+import { HttpTypes } from '@jfsonjs/shared'
 import { BaseTransformType } from './transport'
 
 export interface HttpCollectedType {

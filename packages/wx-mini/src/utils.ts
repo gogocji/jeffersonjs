@@ -1,7 +1,7 @@
-import { getBreadcrumbCategoryInWx, setUrlQuery, Severity, variableTypeDetection } from '@mitojs/utils'
-import { DeviceInfo } from '@mitojs/types'
+import { getBreadcrumbCategoryInWx, setUrlQuery, Severity, variableTypeDetection } from '@jfsonjs/utils'
+import { DeviceInfo } from '@jfsonjs/types'
 import { WxClient } from './wxClient'
-import { WxBreadcrumbTypes } from '@mitojs/shared'
+import { WxBreadcrumbTypes } from '@jfsonjs/shared'
 
 /**
  * 后退时需要计算当前页面地址

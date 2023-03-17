@@ -1,4 +1,4 @@
-import { getFunctionName, logger, nativeTryCatch } from '@mitojs/utils'
+import { getFunctionName, logger, nativeTryCatch } from '@jfsonjs/utils'
 
 type MonitorCallback = (data: any) => void
 /**

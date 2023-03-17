@@ -1,9 +1,9 @@
-import { BaseBreadcrumbTypes, BREADCRUMBCATEGORYS, ErrorTypes, SDK_NAME, SDK_VERSION } from '@mitojs/shared'
+import { BaseBreadcrumbTypes, BREADCRUMBCATEGORYS, ErrorTypes, SDK_NAME, SDK_VERSION } from '@jfsonjs/shared'
 import { reactUrl } from '@/test/config'
-import { TransportDataType } from '@mitojs/types'
+import { TransportDataType } from '@jfsonjs/types'
 import { Severity } from '@mitojs/utils'
 import puppeteer from 'puppeteer'
-import { BrowserClient } from '@mitojs/browser'
+import { BrowserClient } from '@jfsonjs/browser'
 
 describe('React e2e', () => {
   const timeout = 3000

@@ -1,6 +1,6 @@
-import { EventTypes, SDK_VERSION } from '@mitojs/shared'
-import { BaseClientType, BaseOptionsFieldsIntegrationType, BasePluginType, LogTypes } from '@mitojs/types'
-import { logger } from '@mitojs/utils'
+import { EventTypes, SDK_VERSION } from '@jfsonjs/shared'
+import { BaseClientType, BaseOptionsFieldsIntegrationType, BasePluginType, LogTypes } from '@jfsonjs/types'
+import { logger } from '@jfsonjs/utils'
 import { BaseTransport, Breadcrumb } from '.'
 import { Subscribe } from './subscribe'
 

@@ -1,6 +1,6 @@
-import { BREADCRUMBCATEGORYS, BrowserBreadcrumbTypes } from '@mitojs/shared'
-import { RouteChangeCollectType } from '@mitojs/types'
-import { sleepRun, _global } from '@mitojs/utils'
+import { BREADCRUMBCATEGORYS, BrowserBreadcrumbTypes } from '@jfsonjs/shared'
+import { RouteChangeCollectType } from '@jfsonjs/types'
+import { sleepRun, _global } from '@jfsonjs/utils'
 import { BrowserClient } from '../../browserClient'
 import historyRoutePlugin from '../../plugins/historyRoute'
 

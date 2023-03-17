@@ -1,8 +1,8 @@
-import { silentConsoleScope, Severity, getTimestamp, variableTypeDetection, getBigVersion, getUrlWithEnv } from '@mitojs/utils'
+import { silentConsoleScope, Severity, getTimestamp, variableTypeDetection, getBigVersion, getUrlWithEnv } from '@jfsonjs/utils'
 import { vue2VmHandler, vue3VmHandler } from './helper'
-import { BaseBreadcrumbTypes, BaseEventTypes, BREADCRUMBCATEGORYS, ErrorTypes } from '@mitojs/shared'
-import { BasePluginType, ReportDataType, ViewModel } from '@mitojs/types'
-import { BaseClient } from '@mitojs/core'
+import { BaseBreadcrumbTypes, BaseEventTypes, BREADCRUMBCATEGORYS, ErrorTypes } from '@jfsonjs/shared'
+import { BasePluginType, ReportDataType, ViewModel } from '@jfsonjs/types'
+import { BaseClient } from '@jfsonjs/core'
 
 const vuePlugin: BasePluginType<BaseEventTypes, BaseClient> = {
   name: BaseEventTypes.VUE,
@@ -53,7 +53,7 @@ const vuePlugin: BasePluginType<BaseEventTypes, BaseClient> = {
       data,
       level: Severity.Error
     })
-    this.transport.send(data, breadcrumbStack)
+    this.transport.send(data, breadcrumbStack, true)
   }
 }
 export default vuePlugin

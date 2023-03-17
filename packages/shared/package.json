@@ -1,7 +1,7 @@
 {
   "name": "@jfsonjs/shared",
-  "version": "3.0.1",
-  "description": "@mitojs/shared",
+  "version": "3.0.2",
+  "description": "@jfsonjs/shared",
   "author": "cjinhuo",
   "license": "MIT",
   "main": "dist/shared.js",

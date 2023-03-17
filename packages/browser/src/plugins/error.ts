@@ -1,6 +1,6 @@
-import { BrowserBreadcrumbTypes, BrowserEventTypes, ErrorTypes, ERROR_TYPE_RE } from '@mitojs/shared'
-import { extractErrorStack, getLocationHref, getTimestamp, interceptStr, isError, on, Severity, _global } from '@mitojs/utils'
-import { BasePluginType, ReportDataType } from '@mitojs/types'
+import { BrowserBreadcrumbTypes, BrowserEventTypes, ErrorTypes, ERROR_TYPE_RE } from '@jfsonjs/shared'
+import { extractErrorStack, getLocationHref, getTimestamp, interceptStr, isError, on, Severity, _global } from '@jfsonjs/utils'
+import { BasePluginType, ReportDataType } from '@jfsonjs/types'
 import { BrowserClient } from '../browserClient'
 import { addBreadcrumbInBrowser } from '../utils'
 
@@ -35,7 +35,7 @@ const errorPlugin: BasePluginType<BrowserEventTypes, BrowserClient> = {
   async consumer(this: BrowserClient, transformedData: ReportDataType) {
     const type = transformedData.type === ErrorTypes.RESOURCE ? BrowserBreadcrumbTypes.RESOURCE : BrowserBreadcrumbTypes.CODE_ERROR
     const breadcrumbStack = await addBreadcrumbInBrowser.call(this, transformedData, type, Severity.Error)
-    this.transport.send(transformedData, breadcrumbStack)
+    this.transport.send(transformedData, breadcrumbStack, true)
     // 清空breadcrumb
     this.breadcrumb.clear()
   }

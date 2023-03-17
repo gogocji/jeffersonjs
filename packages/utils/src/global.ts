@@ -1,6 +1,6 @@
-import { EventTypes } from '@mitojs/shared'
+import { EventTypes } from '@jfsonjs/shared'
 import { Logger } from './logger'
-import { DeviceInfo } from '@mitojs/types'
+import { DeviceInfo } from '@jfsonjs/types'
 import { variableTypeDetection } from './is'
 
 /**

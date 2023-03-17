@@ -1,7 +1,7 @@
-import { BaseClient } from '@mitojs/core'
-import { BaseBreadcrumbTypes, BREADCRUMBCATEGORYS, ErrorTypes } from '@mitojs/shared'
-import { ReportDataType } from '@mitojs/types'
-import { extractErrorStack, Severity } from '@mitojs/utils'
+import { BaseClient } from '@jfsonjs/core'
+import { BaseBreadcrumbTypes, BREADCRUMBCATEGORYS, ErrorTypes } from '@jfsonjs/shared'
+import { ReportDataType } from '@jfsonjs/types'
+import { extractErrorStack, Severity } from '@jfsonjs/utils'
 import { PureComponent, ReactNode, ErrorInfo, ComponentType, FC } from 'react'
 import { MitoContext } from './provider'
 
@@ -36,7 +36,7 @@ class ErrorBoundaryWrapped extends PureComponent<ErrorBoundaryProps, ErrorBounda
       category: BREADCRUMBCATEGORYS.EXCEPTION,
       level: Severity.Error
     })
-    MitoInstance?.transport.send(reactError, breadcrumbStack)
+    MitoInstance?.transport.send(reactError, breadcrumbStack, true)
     this.setState({
       hasError: true
     })

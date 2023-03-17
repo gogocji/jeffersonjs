@@ -1,7 +1,7 @@
 {
   "name": "@jfsonjs/core",
-  "version": "3.0.2",
-  "description": "@mitojs/core",
+  "version": "3.0.3",
+  "description": "@jfsonjs/core",
   "author": "cjinhuo",
   "license": "MIT",
   "main": "dist/core.js",
@@ -24,9 +24,9 @@
     "monitor"
   ],
   "dependencies": {
-    "@mitojs/types": "3.0.1",
-    "@mitojs/utils": "3.0.1",
-    "@mitojs/shared": "3.0.1"
+    "@jfsonjs/types": "3.0.3",
+    "@jfsonjs/utils": "3.0.3",
+    "@jfsonjs/shared": "3.0.2"
   },
   "publishConfig": {
     "access": "public"

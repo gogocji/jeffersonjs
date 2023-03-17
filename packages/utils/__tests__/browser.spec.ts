@@ -1,4 +1,4 @@
-import { BREADCRUMBCATEGORYS, BrowserBreadcrumbTypes } from '@mitojs/shared'
+import { BREADCRUMBCATEGORYS, BrowserBreadcrumbTypes } from '@jfsonjs/shared'
 import { extractErrorStack, getBreadcrumbCategoryInBrowser, htmlElementAsString, parseUrlToObj, Severity } from '../src'
 
 describe('browser.ts', () => {

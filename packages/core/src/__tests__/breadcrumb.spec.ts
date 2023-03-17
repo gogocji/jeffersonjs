@@ -1,7 +1,7 @@
-import { BrowserOptionsFieldsTypes } from '@mitojs/browser'
-import { BREADCRUMBCATEGORYS, BrowserBreadcrumbTypes } from '@mitojs/shared'
-import { BreadcrumbPushData } from '@mitojs/types'
-import { Severity } from '@mitojs/utils'
+import { BrowserOptionsFieldsTypes } from '@jfsonjs/browser'
+import { BREADCRUMBCATEGORYS, BrowserBreadcrumbTypes } from '@jfsonjs/shared'
+import { BreadcrumbPushData } from '@jfsonjs/types'
+import { Severity } from '@jfsonjs/utils'
 import { Breadcrumb } from '../breadcrumb'
 
 const MaxBreadcrumbs = 16

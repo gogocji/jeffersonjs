@@ -9,7 +9,8 @@ import hashRoutePlugin from './plugins/hashRoute'
 import historyRoutePlugin from './plugins/historyRoute'
 import consolePlugin from './plugins/console'
 import unhandlerejectionPlugin from './plugins/unhandlerejecttion'
-import { BasePluginType } from '@mitojs/types'
+import { BasePluginType } from '@jfsonjs/types'
+import performancePlugin from './plugins/performance'
 function createBrowserInstance(options: BrowserOptionsFieldsTypes = {}, plugins: BasePluginType[] = []) {
   const browserClient = new BrowserClient(options)
   const browserPlugins = [
@@ -20,7 +21,8 @@ function createBrowserInstance(options: BrowserOptionsFieldsTypes = {}, plugins:
     hashRoutePlugin,
     historyRoutePlugin,
     consolePlugin,
-    unhandlerejectionPlugin
+    unhandlerejectionPlugin,
+    performancePlugin
   ]
   browserClient.use([...browserPlugins, ...plugins])
   return browserClient

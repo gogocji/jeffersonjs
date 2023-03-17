@@ -1,6 +1,6 @@
-import { BrowserEventTypes, HttpTypes } from '@mitojs/shared'
-import { getTimestamp, replaceOld, _global } from '@mitojs/utils'
-import { BasePluginType, HttpCollectedType, HttpTransformedType, voidFun } from '@mitojs/types'
+import { BrowserEventTypes, HttpTypes } from '@jfsonjs/shared'
+import { getTimestamp, replaceOld, _global } from '@jfsonjs/utils'
+import { BasePluginType, HttpCollectedType, HttpTransformedType, voidFun } from '@jfsonjs/types'
 import { BrowserClient } from '../browserClient'
 import { httpTransform, httpTransformedDataConsumer } from './xhr'
 

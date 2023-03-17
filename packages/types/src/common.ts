@@ -1,4 +1,4 @@
-import { Severity } from '@mitojs/utils'
+import { Severity } from '@jfsonjs/utils'
 import { HttpCollectedType } from './http'
 
 export type voidFun = () => void

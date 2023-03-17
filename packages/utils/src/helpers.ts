@@ -1,5 +1,5 @@
-import { IAnyObject } from '@mitojs/types'
-import { globalVar, ToStringTypes } from '@mitojs/shared'
+import { IAnyObject } from '@jfsonjs/types'
+import { globalVar, ToStringTypes } from '@jfsonjs/shared'
 import { logger } from './logger'
 import { nativeToString, variableTypeDetection } from './is'
 import { isWxMiniEnv, isBrowserEnv } from './global'

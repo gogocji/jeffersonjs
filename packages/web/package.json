@@ -25,7 +25,7 @@
     "monitor"
   ],
   "dependencies": {
-    "@mitojs/browser": "3.0.1",
+    "@jfsonjs/browser": "3.0.5",
     "@mitojs/react": "3.0.1",
     "@mitojs/vue": "3.0.1"
   },

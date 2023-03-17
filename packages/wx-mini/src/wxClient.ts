@@ -1,7 +1,7 @@
-import { Breadcrumb, BaseClient } from '@mitojs/core'
-import { ErrorTypes, EventTypes, MitoLog, MitoLogEmptyMsg, MitoLogEmptyTag, Silent, WxBreadcrumbTypes, WxEventTypes } from '@mitojs/shared'
+import { Breadcrumb, BaseClient } from '@jfsonjs/core'
+import { ErrorTypes, EventTypes, MitoLog, MitoLogEmptyMsg, MitoLogEmptyTag, Silent, WxBreadcrumbTypes, WxEventTypes } from '@jfsonjs/shared'
 import { extractErrorStack, firstStrtoUppercase, getCurrentRoute, getTimestamp, isError, Severity, unknownToString } from '@mitojs/utils'
-import { LogTypes, TrackReportDataType } from '@mitojs/types'
+import { LogTypes, TrackReportDataType } from '@jfsonjs/types'
 import { WxOptions } from './wxOptions'
 import { WxTransport } from './wxTransport'
 import { WxOptionsFieldsTypes } from './types'
@@ -46,7 +46,7 @@ export class WxClient extends BaseClient<WxOptionsFieldsTypes, EventTypes> {
       ...errorInfo
     }
     const breadcrumbStack = addBreadcrumbInWx.call(this, message, WxBreadcrumbTypes.CUSTOMER, Severity.fromString(level.toString()))
-    this.transport.send(reportData, breadcrumbStack)
+    this.transport.send(reportData, breadcrumbStack, true)
   }
 
   /**

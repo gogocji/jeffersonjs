@@ -1,5 +1,5 @@
-import { BreadcrumbPushData, TransportDataType, VueInstance } from '@mitojs/types'
-import { Breadcrumb } from '@mitojs/core'
+import { BreadcrumbPushData, TransportDataType, VueInstance } from '@jfsonjs/types'
+import { Breadcrumb } from '@jfsonjs/core'
 type CANCEL = null | undefined | boolean
 
 type TSetRequestHeader = (key: string, value: string) => {}

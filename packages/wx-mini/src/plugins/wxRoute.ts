@@ -1,6 +1,6 @@
-import { ErrorTypes, WxBaseEventTypes, WxBreadcrumbTypes, WxEventTypes, WxRouteEvents } from '@mitojs/shared'
+import { ErrorTypes, WxBaseEventTypes, WxBreadcrumbTypes, WxEventTypes, WxRouteEvents } from '@jfsonjs/shared'
 import { getCurrentRoute, Severity, variableTypeDetection } from '@mitojs/utils'
-import { BasePluginType, ReportDataType } from '@mitojs/types'
+import { BasePluginType, ReportDataType } from '@jfsonjs/types'
 import { addBreadcrumbInWx, getNavigateBackTargetUrl } from '../utils'
 import { WxClient } from '../wxClient'
 import { WxRouteCollectType } from '../types'

@@ -1,6 +1,6 @@
-import { BaseOptions } from '@mitojs/core'
-import { ToStringTypes } from '@mitojs/shared'
-import { validateOptionsAndSet } from '@mitojs/utils'
+import { BaseOptions } from '@jfsonjs/core'
+import { ToStringTypes } from '@jfsonjs/shared'
+import { validateOptionsAndSet } from '@jfsonjs/utils'
 import { BrowserOptionsFieldsTypes } from './types'
 
 export class BrowserOptions extends BaseOptions<BrowserOptionsFieldsTypes> {

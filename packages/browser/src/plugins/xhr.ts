@@ -1,4 +1,4 @@
-import { BREADCRUMBCATEGORYS, BrowserBreadcrumbTypes, BrowserEventTypes, ErrorTypes, globalVar, HttpTypes, HTTP_CODE } from '@mitojs/shared'
+import { BREADCRUMBCATEGORYS, BrowserBreadcrumbTypes, BrowserEventTypes, ErrorTypes, globalVar, HttpTypes, HTTP_CODE } from '@jfsonjs/shared'
 import {
   getTimestamp,
   replaceOld,
@@ -10,8 +10,8 @@ import {
   SpanStatus,
   getLocationHref,
   getRealPath
-} from '@mitojs/utils'
-import { BasePluginType, HttpCollectedType, HttpTransformedType, MITOXMLHttpRequest, voidFun } from '@mitojs/types'
+} from '@jfsonjs/utils'
+import { BasePluginType, HttpCollectedType, HttpTransformedType, MITOXMLHttpRequest, voidFun } from '@jfsonjs/types'
 import { BrowserClient } from '../browserClient'
 import { addBreadcrumbInBrowser } from '../utils'
 
@@ -117,7 +117,7 @@ export async function httpTransformedDataConsumer(this: BrowserClient, transform
       level: Severity.Error,
       time
     })
-    this.transport.send(transformedData, breadcrumbStack)
+    this.transport.send(transformedData, breadcrumbStack, true)
     // 清空breadcrumb
     this.breadcrumb.clear()
   }

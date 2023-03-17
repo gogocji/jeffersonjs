@@ -1,4 +1,4 @@
-import { globalVar, ToStringTypes } from '@mitojs/shared'
+import { globalVar, ToStringTypes } from '@jfsonjs/shared'
 import {
   defaultFunctionName,
   generateUUID,

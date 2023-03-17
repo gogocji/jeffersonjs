@@ -1,7 +1,7 @@
-import { BrowserClient } from '@mitojs/browser'
-import { BREADCRUMBCATEGORYS, BrowserBreadcrumbTypes } from '@mitojs/shared'
-import { ConsoleCollectType } from '@mitojs/types'
-import { Severity } from '@mitojs/utils'
+import { BrowserClient } from '@jfsonjs/browser'
+import { BREADCRUMBCATEGORYS, BrowserBreadcrumbTypes } from '@jfsonjs/shared'
+import { ConsoleCollectType } from '@jfsonjs/types'
+import { Severity } from '@jfsonjs/utils'
 import consolePlugin from '../../plugins/console'
 describe('consolePlugin', () => {
   const browserInstance = new BrowserClient({

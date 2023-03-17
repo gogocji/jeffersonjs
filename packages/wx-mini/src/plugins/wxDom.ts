@@ -1,5 +1,5 @@
-import { LinstenerTypes, WxBaseEventTypes, WxBreadcrumbTypes } from '@mitojs/shared'
-import { BasePluginType } from '@mitojs/types'
+import { LinstenerTypes, WxBaseEventTypes, WxBreadcrumbTypes } from '@jfsonjs/shared'
+import { BasePluginType } from '@jfsonjs/types'
 import { isEmptyObject, replaceOld, throttle } from '@mitojs/utils'
 import { addBreadcrumbInWx, targetAsString } from '../utils'
 import { WxClient } from '../wxClient'

@@ -1,4 +1,4 @@
-import { EventTypes } from '@mitojs/shared'
+import { EventTypes } from '@jfsonjs/shared'
 import { BaseClientType } from './baseClientType'
 
 export interface BasePluginType<T extends EventTypes = EventTypes, C extends BaseClientType = BaseClientType> {

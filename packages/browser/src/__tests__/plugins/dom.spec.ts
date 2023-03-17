@@ -1,5 +1,5 @@
-import { BrowserBreadcrumbTypes } from '@mitojs/shared'
-import { getBreadcrumbCategoryInBrowser, Severity, sleepRun } from '@mitojs/utils'
+import { BrowserBreadcrumbTypes } from '@jfsonjs/shared'
+import { getBreadcrumbCategoryInBrowser, Severity, sleepRun } from '@jfsonjs/utils'
 import { BrowserClient } from '../../browserClient'
 import domPlugin, { DomCollectedType } from '../../plugins/dom'
 

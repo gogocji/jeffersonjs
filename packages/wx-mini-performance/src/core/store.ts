@@ -10,7 +10,7 @@ import {
   WxPerformanceItem,
   WxPerformanceEntryObj
 } from '../types/index'
-import { ToStringTypes } from '@mitojs/shared'
+import { ToStringTypes } from '@jfsonjs/shared'
 
 class Store extends Event {
   appId: string
