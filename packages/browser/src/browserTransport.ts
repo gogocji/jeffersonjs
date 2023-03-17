@@ -5,6 +5,7 @@ import { ReportDataType } from '@jfsonjs/types'
 import { BaseTransport } from '@jfsonjs/core'
 import { gql } from '@apollo/client'
 import graphQLClient from './apolloClient'
+import { _support } from '../../utils/src/global'
 
 export class BrowserTransport extends BaseTransport<BrowserOptionsFieldsTypes> {
   configReportXhr: unknown
@@ -37,7 +38,7 @@ export class BrowserTransport extends BaseTransport<BrowserOptionsFieldsTypes> {
               breadcrumb: data.breadcrumb as string,
               data: data.data as string,
               record: data?.record as string,
-              deviceInfo: data?.deviceInfo as string
+              deviceInfo: _support.browserDeviceInfo
             }
           }
         })
