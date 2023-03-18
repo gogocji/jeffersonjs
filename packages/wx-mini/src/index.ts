@@ -1,4 +1,4 @@
-import { BasePluginType } from '@jfsonjs/types'
+import { BasePluginType } from '../../types/src/index'
 import wxAppPlugins from './plugins/wxApp'
 import wxConsolePlugin from './plugins/wxConsole'
 import wxDomPlugin from './plugins/wxDom'

@@ -9,8 +9,9 @@ import hashRoutePlugin from './plugins/hashRoute'
 import historyRoutePlugin from './plugins/historyRoute'
 import consolePlugin from './plugins/console'
 import unhandlerejectionPlugin from './plugins/unhandlerejecttion'
-import { BasePluginType } from '@jfsonjs/types'
+import { BasePluginType } from '../../types/src/index'
 import performancePlugin from './plugins/performance'
+import whiteScreenPlugin from './plugins/whiteScreen'
 function createBrowserInstance(options: BrowserOptionsFieldsTypes = {}, plugins: BasePluginType[] = []) {
   const browserClient = new BrowserClient(options)
   const browserPlugins = [
@@ -22,7 +23,8 @@ function createBrowserInstance(options: BrowserOptionsFieldsTypes = {}, plugins:
     historyRoutePlugin,
     consolePlugin,
     unhandlerejectionPlugin,
-    performancePlugin
+    performancePlugin,
+    whiteScreenPlugin
   ]
   browserClient.use([...browserPlugins, ...plugins])
   return browserClient

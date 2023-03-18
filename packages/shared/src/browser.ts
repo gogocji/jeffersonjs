@@ -14,7 +14,8 @@ export const enum BrowserEventTypes {
   HASHCHANGE = 'hashchange',
   UNHANDLEDREJECTION = 'unhandledrejection',
   CUSTOMER = 'Customer',
-  PERFORMANCE = 'performance'
+  PERFORMANCE = 'performance',
+  WHITESCREEN = 'whiteScreen'
 }
 
 export const enum BrowserBreadcrumbTypes {

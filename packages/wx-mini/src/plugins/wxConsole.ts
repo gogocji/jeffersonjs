@@ -1,6 +1,6 @@
-import { WxEventTypes, globalVar, WxBreadcrumbTypes, WxBaseEventTypes } from '@jfsonjs/shared'
-import { replaceOld, Severity, variableTypeDetection } from '@mitojs/utils'
-import { BasePluginType, ConsoleCollectType } from '@jfsonjs/types'
+import { WxEventTypes, globalVar, WxBreadcrumbTypes, WxBaseEventTypes } from '../../../shared/src/index'
+import { replaceOld, Severity, variableTypeDetection } from '../../../utils/src/index'
+import { BasePluginType, ConsoleCollectType } from '../../../types/src/index'
 import { WxClient } from '../wxClient'
 import { addBreadcrumbInWx } from '../utils'
 const wxConsolePlugin: BasePluginType<WxEventTypes, WxClient> = {

@@ -1,4 +1,4 @@
-import { BaseOptionsFieldsIntegrationType, IAnyObject, TransportDataType } from '@jfsonjs/types'
+import { BaseOptionsFieldsIntegrationType, IAnyObject, TransportDataType } from '../../types/src/index'
 
 export interface WxRouteCollectType {
   from: string

@@ -1,6 +1,6 @@
-import { EventTypes, SDK_VERSION } from '@jfsonjs/shared'
-import { BaseClientType, BaseOptionsFieldsIntegrationType, BasePluginType, LogTypes } from '@jfsonjs/types'
-import { logger } from '@jfsonjs/utils'
+import { EventTypes, SDK_VERSION } from '../../shared/src/index'
+import { BaseClientType, BaseOptionsFieldsIntegrationType, BasePluginType, LogTypes } from '../../types/src/index'
+import { logger } from '../../utils/src/index'
 import { BaseTransport, Breadcrumb } from '.'
 import { Subscribe } from './subscribe'
 

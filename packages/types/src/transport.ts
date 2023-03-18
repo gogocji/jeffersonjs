@@ -1,4 +1,4 @@
-import { ErrorTypes } from '@jfsonjs/shared'
+import { ErrorTypes } from '../../shared/src/index'
 import { BreadcrumbPushData } from './breadcrumb'
 import { HttpTransformedType } from './http'
 import { DeviceInfo } from './wx'

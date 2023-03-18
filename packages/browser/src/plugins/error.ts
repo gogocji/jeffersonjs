@@ -1,6 +1,6 @@
-import { BrowserBreadcrumbTypes, BrowserEventTypes, ErrorTypes, ERROR_TYPE_RE } from '@jfsonjs/shared'
-import { extractErrorStack, getLocationHref, getTimestamp, interceptStr, isError, on, Severity, _global } from '@jfsonjs/utils'
-import { BasePluginType, ReportDataType } from '@jfsonjs/types'
+import { BrowserBreadcrumbTypes, BrowserEventTypes, ErrorTypes, ERROR_TYPE_RE } from '../../../shared/src/index'
+import { extractErrorStack, getLocationHref, getTimestamp, interceptStr, isError, on, Severity, _global } from '../../../utils/src/index'
+import { BasePluginType, ReportDataType } from '../../../types/src/index'
 import { BrowserClient } from '../browserClient'
 import { addBreadcrumbInBrowser } from '../utils'
 

@@ -8,9 +8,17 @@ import {
   WxEventTypes,
   BREADCRUMBCATEGORYS,
   WxBaseEventTypes
-} from '@jfsonjs/shared'
-import { fromHttpStatus, getCurrentRoute, getRealPath, getTimestamp, Severity, SpanStatus, variableTypeDetection } from '@mitojs/utils'
-import { BasePluginType, HttpCollectedType, HttpTransformedType } from '@jfsonjs/types'
+} from '../../..//shared/src/index'
+import {
+  fromHttpStatus,
+  getCurrentRoute,
+  getRealPath,
+  getTimestamp,
+  Severity,
+  SpanStatus,
+  variableTypeDetection
+} from '../../../utils/src/index'
+import { BasePluginType, HttpCollectedType, HttpTransformedType } from '../../../types/src/index'
 import { WxClient } from '../wxClient'
 import { addBreadcrumbInWx } from '../utils'
 

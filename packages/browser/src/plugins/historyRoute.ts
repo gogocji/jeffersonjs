@@ -1,6 +1,6 @@
-import { BrowserEventTypes } from '@jfsonjs/shared'
-import { getLocationHref, replaceOld, supportsHistory, _global } from '@jfsonjs/utils'
-import { BasePluginType, RouteChangeCollectType, voidFun } from '@jfsonjs/types'
+import { BrowserEventTypes } from '../../../shared/src/index'
+import { getLocationHref, replaceOld, supportsHistory, _global } from '../../../utils/src/index'
+import { BasePluginType, RouteChangeCollectType, voidFun } from '../../../types/src/index'
 import { BrowserClient } from '../browserClient'
 import { routeTransform, routeTransformedConsumer } from './hashRoute'
 

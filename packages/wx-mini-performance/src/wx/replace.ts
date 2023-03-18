@@ -1,4 +1,4 @@
-import { replaceOld, isEmptyObject } from '@mitojs/utils'
+import { replaceOld, isEmptyObject } from '../../../utils/src/index'
 import Store from '../core/store'
 import HandleEvents from './handleEvents'
 import { WxPerformanceItemType, WxListenerTypes } from '../constant'

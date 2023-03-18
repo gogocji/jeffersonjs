@@ -1,3 +1,3 @@
-export * from '@jfsonjs/browser'
-export * from '@mitojs/vue'
+export * from '../../browser/src/index'
+export * from '../../vue/src/index'
 export { ErrorBoundary, WithErrorBoundary, MitoProvider, MitoContext } from '@mitojs/react'

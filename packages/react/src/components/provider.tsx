@@ -1,4 +1,4 @@
-import { BaseClient } from '@jfsonjs/core'
+import { BaseClient } from '../../../core/src/index'
 import { FC, createContext } from 'react'
 import { MitoContextValueType } from '../types'
 

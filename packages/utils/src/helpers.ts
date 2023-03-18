@@ -1,5 +1,5 @@
-import { IAnyObject } from '@jfsonjs/types'
-import { globalVar, ToStringTypes } from '@jfsonjs/shared'
+import { IAnyObject } from '../../types/src/index'
+import { globalVar, ToStringTypes } from '../../shared/src/index'
 import { logger } from './logger'
 import { nativeToString, variableTypeDetection } from './is'
 import { isWxMiniEnv, isBrowserEnv } from './global'

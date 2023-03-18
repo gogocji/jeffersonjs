@@ -1,4 +1,4 @@
-import { getFunctionName, logger, nativeTryCatch } from '@jfsonjs/utils'
+import { getFunctionName, logger, nativeTryCatch } from '../../utils/src/index'
 
 type MonitorCallback = (data: any) => void
 /**

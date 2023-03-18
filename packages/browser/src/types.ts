@@ -1,6 +1,10 @@
-import { BaseOptionsFieldsIntegrationType } from '@jfsonjs/types'
+import { BaseOptionsFieldsIntegrationType } from '../../types/src/index'
 
-export interface BrowserOptionsFieldsTypes extends BrowsersilentOptionsType, BaseOptionsFieldsIntegrationType, BrowserOptionsHooksType {
+export interface BrowserOptionsFieldsTypes
+  extends BrowsersilentOptionsType,
+    BaseOptionsFieldsIntegrationType,
+    BrowserOptionsHooksType,
+    BrowserWhiteScreenOptionsType {
   /**
    * 默认为false，默认是xhr的上报方式，
    * 为true时，则使用img上报的方式，会在dsn后面追加data=encodeURIComponent(reportData)，在服务端接受时需要decodeURIComponent
@@ -58,4 +62,12 @@ export interface BrowserOptionsHooksType {
    * @memberof BrowserOptionsHooksType
    */
   configReportXhr?(xhr: XMLHttpRequest, reportData: any): void
+}
+
+export interface BrowserWhiteScreenOptionsType {
+  // 页面中是否有骨架屏
+  skeletonProject?: boolean
+
+  // 容器列表，默认值为['html', 'body', '#app', '#root']
+  whiteBoxElements?: string[]
 }

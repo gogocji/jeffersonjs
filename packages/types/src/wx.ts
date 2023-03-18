@@ -1,4 +1,4 @@
-import { TrackActionType } from '@jfsonjs/shared'
+import { TrackActionType } from '../../shared/src/index'
 
 export interface DeviceInfo {
   //网络类型: 4g,3g,5g,wifi

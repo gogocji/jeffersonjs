@@ -1,6 +1,6 @@
-import { logger, Queue, isInclude, createErrorId, isEmpty, validateOptionsAndSet } from '@jfsonjs/utils'
-import { SDK_NAME, SDK_VERSION, ToStringTypes } from '@jfsonjs/shared'
-import { AuthInfo, BaseOptionsFieldsIntegrationType, BreadcrumbPushData, ReportDataType, TransportDataType } from '@jfsonjs/types'
+import { logger, Queue, isInclude, createErrorId, isEmpty, validateOptionsAndSet } from '../../utils/src/index'
+import { SDK_NAME, SDK_VERSION, ToStringTypes } from '../../shared/src/index'
+import { AuthInfo, BaseOptionsFieldsIntegrationType, BreadcrumbPushData, ReportDataType, TransportDataType } from '../../types/src/index'
 
 /**
  * 传输数据抽象类

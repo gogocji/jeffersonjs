@@ -1,5 +1,5 @@
-import { BrowserBreadcrumbTypes } from '@jfsonjs/shared'
-import { getBreadcrumbCategoryInBrowser, Severity } from '@jfsonjs/utils'
+import { BrowserBreadcrumbTypes } from '../../shared/src/index'
+import { getBreadcrumbCategoryInBrowser, Severity } from '../../utils/src/index'
 import { BrowserClient } from './browserClient'
 import { BrowserTransport } from './browserTransport'
 

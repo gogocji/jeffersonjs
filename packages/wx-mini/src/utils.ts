@@ -1,7 +1,7 @@
-import { getBreadcrumbCategoryInWx, setUrlQuery, Severity, variableTypeDetection } from '@jfsonjs/utils'
-import { DeviceInfo } from '@jfsonjs/types'
+import { getBreadcrumbCategoryInWx, setUrlQuery, Severity, variableTypeDetection } from '../../utils/src/index'
+import { DeviceInfo } from '../../types/src/index'
 import { WxClient } from './wxClient'
-import { WxBreadcrumbTypes } from '@jfsonjs/shared'
+import { WxBreadcrumbTypes } from '../../shared/src/index'
 
 /**
  * 后退时需要计算当前页面地址

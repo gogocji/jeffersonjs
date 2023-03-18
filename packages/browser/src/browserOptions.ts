@@ -1,6 +1,6 @@
-import { BaseOptions } from '@jfsonjs/core'
-import { ToStringTypes } from '@jfsonjs/shared'
-import { validateOptionsAndSet } from '@jfsonjs/utils'
+import { BaseOptions } from '../../core/src/index'
+import { ToStringTypes } from '../../shared/src/index'
+import { validateOptionsAndSet } from '../../utils/src/index'
 import { BrowserOptionsFieldsTypes } from './types'
 
 export class BrowserOptions extends BaseOptions<BrowserOptionsFieldsTypes> {
@@ -38,6 +38,10 @@ export class BrowserOptions extends BaseOptions<BrowserOptionsFieldsTypes> {
   silentHashchange: boolean
   useImgUpload: boolean
   configReportXhr: unknown = null
+  // 项目是否有骨架屏
+  skeletonProject: boolean
+  // 白屏监控容器列表，默认值为['html', 'body', '#app', '#root']
+  whiteBoxElements: string[]
   constructor(options: BrowserOptionsFieldsTypes) {
     super()
     super.bindOptions(options)
@@ -54,7 +58,9 @@ export class BrowserOptions extends BaseOptions<BrowserOptionsFieldsTypes> {
       silentHashchange,
       silentUnhandledrejection,
       useImgUpload,
-      configReportXhr
+      configReportXhr,
+      skeletonProject,
+      whiteBoxElements
     } = options
     const booleanType = ToStringTypes.Boolean
     const optionArr = [
@@ -67,7 +73,9 @@ export class BrowserOptions extends BaseOptions<BrowserOptionsFieldsTypes> {
       [silentHashchange, 'silentHashchange', booleanType],
       [silentUnhandledrejection, 'silentUnhandledrejection', booleanType],
       [useImgUpload, 'useImgUpload', booleanType],
-      [configReportXhr, 'configReportXhr', ToStringTypes.Function]
+      [configReportXhr, 'configReportXhr', ToStringTypes.Function],
+      [skeletonProject, 'skeletonProject', booleanType],
+      [whiteBoxElements, 'whiteBoxElements', ToStringTypes.Array]
     ]
     validateOptionsAndSet.call(this, optionArr)
   }

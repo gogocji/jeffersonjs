@@ -1,6 +1,6 @@
-import { ToStringTypes } from '@jfsonjs/shared'
-import { BaseOptionsFieldsIntegrationType, BaseOptionsType, VueInstance } from '@jfsonjs/types'
-import { generateUUID, validateOptionsAndSet } from '@jfsonjs/utils'
+import { ToStringTypes } from '../../shared/src/index'
+import { BaseOptionsFieldsIntegrationType, BaseOptionsType, VueInstance } from '../../types/src/index'
+import { generateUUID, validateOptionsAndSet } from '../../utils/src/index'
 
 /**
  * 公用的基础配置项绑定

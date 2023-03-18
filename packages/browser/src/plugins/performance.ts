@@ -1,7 +1,7 @@
-import { BrowserEventTypes } from '@jfsonjs/shared'
-import { BasePluginType, PerformanceDataType, ReportDataType } from '@jfsonjs/types'
+import { BrowserEventTypes } from '../../../shared/src/index'
+import { BasePluginType, PerformanceDataType, ReportDataType } from '../../../types/src/index'
 import { BrowserClient } from '../browserClient'
-import { getWebVitals, getTimestamp, getLocationHref, _global } from '@jfsonjs/utils'
+import { getWebVitals, getTimestamp, getLocationHref, _global } from '../../../utils/src/index'
 
 const performancePlugin: BasePluginType<BrowserEventTypes, BrowserClient> = {
   name: BrowserEventTypes.PERFORMANCE,

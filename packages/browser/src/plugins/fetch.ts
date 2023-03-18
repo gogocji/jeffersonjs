@@ -1,6 +1,6 @@
-import { BrowserEventTypes, HttpTypes } from '@jfsonjs/shared'
-import { getTimestamp, replaceOld, _global } from '@jfsonjs/utils'
-import { BasePluginType, HttpCollectedType, HttpTransformedType, voidFun } from '@jfsonjs/types'
+import { BrowserEventTypes, HttpTypes } from '../../../shared/src/index'
+import { getTimestamp, replaceOld, _global } from '../../../utils/src/index'
+import { BasePluginType, HttpCollectedType, HttpTransformedType, voidFun } from '../../../types/src/index'
 import { BrowserClient } from '../browserClient'
 import { httpTransform, httpTransformedDataConsumer } from './xhr'
 

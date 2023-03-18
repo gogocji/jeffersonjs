@@ -1,6 +1,6 @@
-import { EventTypes } from '@jfsonjs/shared'
+import { EventTypes } from '../../shared/src/index'
 import { Logger } from './logger'
-import { DeviceInfo } from '@jfsonjs/types'
+import { DeviceInfo } from '../../types/src/index'
 import { BrowserDeviceInfo } from '../../types/src/common'
 import { variableTypeDetection } from './is'
 import { UAParser } from 'ua-parser-js'
@@ -45,7 +45,7 @@ export function getGlobal<T>() {
 // whether it is right use &
 const _global = getGlobal<Window & WechatMiniprogram.Wx>()
 const _support = getGlobalMitoSupport()
-const uaResult = new UAParser().getResult();
+const uaResult = new UAParser().getResult()
 
 /**
  * 获取全局变量__MITO__的引用地址
@@ -71,7 +71,7 @@ _support.browserDeviceInfo = {
   device: uaResult.device.model ? uaResult.device.model : 'Unknow',
   // pc
   device_type: uaResult.device.type ? uaResult.device.type : 'Pc'
-};
+}
 
 export { _global, _support }
 

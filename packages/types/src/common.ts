@@ -1,4 +1,4 @@
-import { Severity } from '@jfsonjs/utils'
+import { Severity } from '../../utils/src/index'
 import { HttpCollectedType } from './http'
 
 export type voidFun = () => void
@@ -59,15 +59,15 @@ export interface BrowserDeviceInfo {
   // 浏览器版本号 107.0.0.0
   browser_version?: string
   // Chrome
-  browser?: string,
+  browser?: string
   // 电脑系统 10
-  os_version?: string,
+  os_version?: string
   // Windows
-  os?: string,
+  os?: string
   //  User Agent
-  ua?: string,
+  ua?: string
   //  设备
-  device?: string,
+  device?: string
   // 设备类型
   device_type?: string
 }

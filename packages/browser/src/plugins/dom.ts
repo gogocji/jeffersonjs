@@ -1,6 +1,6 @@
-import { BrowserBreadcrumbTypes, BrowserEventTypes } from '@jfsonjs/shared'
-import { htmlElementAsString, on, throttle, _global } from '@jfsonjs/utils'
-import { BasePluginType } from '@jfsonjs/types'
+import { BrowserBreadcrumbTypes, BrowserEventTypes } from '../../../shared/src/index'
+import { htmlElementAsString, on, throttle, _global } from '../../../utils/src/index'
+import { BasePluginType } from '../../../types/src/index'
 import { BrowserClient } from '../browserClient'
 import { addBreadcrumbInBrowser } from '../utils'
 

@@ -1,4 +1,4 @@
-import { HttpTypes } from '@jfsonjs/shared'
+import { HttpTypes } from '../../shared/src/index'
 import { BaseTransformType } from './transport'
 
 export interface HttpCollectedType {

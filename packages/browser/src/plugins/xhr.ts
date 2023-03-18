@@ -6,7 +6,7 @@ import {
   globalVar,
   HttpTypes,
   HTTP_CODE
-} from '@jfsonjs/shared'
+} from '../../../shared/src/index'
 import {
   getTimestamp,
   replaceOld,
@@ -18,8 +18,8 @@ import {
   SpanStatus,
   getLocationHref,
   getRealPath
-} from '@jfsonjs/utils'
-import { BasePluginType, HttpCollectedType, HttpTransformedType, MITOXMLHttpRequest, voidFun } from '@jfsonjs/types'
+} from '../../../utils/src/index'
+import { BasePluginType, HttpCollectedType, HttpTransformedType, MITOXMLHttpRequest, voidFun } from '../../../types/src/index'
 import { BrowserClient } from '../browserClient'
 import { addBreadcrumbInBrowser } from '../utils'
 

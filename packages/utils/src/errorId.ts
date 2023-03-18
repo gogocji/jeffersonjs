@@ -1,5 +1,5 @@
-import { ReportDataType } from '@jfsonjs/types'
-import { BrowserEventTypes, ErrorTypes } from '@jfsonjs/shared'
+import { ReportDataType } from '../../types/src/index'
+import { BrowserEventTypes, ErrorTypes } from '../../shared/src/index'
 import { variableTypeDetection } from './is'
 const allErrorNumber: unknown = {}
 /**

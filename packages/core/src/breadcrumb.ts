@@ -1,6 +1,6 @@
-import { ToStringTypes } from '@jfsonjs/shared'
-import { logger, getTimestamp, silentConsoleScope, toStringValidateOption } from '@jfsonjs/utils'
-import { BaseOptionsFieldsIntegrationType, BreadcrumbPushData } from '@jfsonjs/types'
+import { ToStringTypes } from '../../shared/src/index'
+import { logger, getTimestamp, silentConsoleScope, toStringValidateOption } from '../../utils/src/index'
+import { BaseOptionsFieldsIntegrationType, BreadcrumbPushData } from '../../types/src/index'
 
 /**
  * 用户行为栈存储，实体类

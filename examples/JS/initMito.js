@@ -7,6 +7,8 @@ const instance = MITO.init({
   dsn: 'http://localhost:2021/errors/upload',
   throttleDelayTime: 0,
   enableTraceId: true,
+  skeletonProject: true, // 项目是否有骨架屏
+  whiteBoxElements: ['html', 'body', '#app', '#root'], // 白屏
   configReportXhr(xhr, reportData) {
     xhr.setRequestHeader('mito-header', 'test123')
   },

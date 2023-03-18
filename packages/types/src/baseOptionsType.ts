@@ -1,5 +1,5 @@
-import { BreadcrumbPushData, TransportDataType, VueInstance } from '@jfsonjs/types'
-import { Breadcrumb } from '@jfsonjs/core'
+import { BreadcrumbPushData, TransportDataType, VueInstance } from '../../types/src/index'
+import { Breadcrumb } from '../../core/src/index'
 type CANCEL = null | undefined | boolean
 
 type TSetRequestHeader = (key: string, value: string) => {}

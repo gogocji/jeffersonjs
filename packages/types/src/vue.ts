@@ -1,4 +1,4 @@
-import { IAnyObject } from '@jfsonjs/types'
+import { IAnyObject } from '../../types/src/index'
 
 export interface VueInstance {
   // fix in Vue3 typescript's declaration file error

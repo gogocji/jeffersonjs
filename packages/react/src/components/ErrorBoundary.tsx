@@ -1,7 +1,7 @@
-import { BaseClient } from '@jfsonjs/core'
-import { BaseBreadcrumbTypes, BREADCRUMBCATEGORYS, ErrorTypes } from '@jfsonjs/shared'
-import { ReportDataType } from '@jfsonjs/types'
-import { extractErrorStack, Severity } from '@jfsonjs/utils'
+import { BaseClient } from '../../../core/src/index'
+import { BaseBreadcrumbTypes, BREADCRUMBCATEGORYS, ErrorTypes } from '../../../shared/src/index'
+import { ReportDataType } from '../../../types/src/index'
+import { extractErrorStack, Severity } from '../../../utils/src/index'
 import { PureComponent, ReactNode, ErrorInfo, ComponentType, FC } from 'react'
 import { MitoContext } from './provider'
 

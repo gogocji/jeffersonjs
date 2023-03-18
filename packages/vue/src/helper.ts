@@ -1,5 +1,5 @@
-import { ViewModel } from '@jfsonjs/types'
-import { getObjectWithForIn } from '@jfsonjs/utils'
+import { ViewModel } from '../../types/src/index'
+import { getObjectWithForIn } from '../../utils/src/index'
 
 export function vue2VmHandler(vm: ViewModel) {
   let componentName = ''

@@ -1,4 +1,4 @@
-import { Breadcrumb, BaseClient } from '@jfsonjs/core'
+import { Breadcrumb, BaseClient } from '../../core/src/index'
 import {
   BrowserBreadcrumbTypes,
   BrowserEventTypes,
@@ -8,7 +8,7 @@ import {
   MitoLogEmptyMsg,
   MitoLogEmptyTag,
   Silent
-} from '@jfsonjs/shared'
+} from '../../shared/src/index'
 import {
   extractErrorStack,
   firstStrtoUppercase,
@@ -18,8 +18,8 @@ import {
   isError,
   Severity,
   unknownToString
-} from '@jfsonjs/utils'
-import { LogTypes } from '@jfsonjs/types'
+} from '../../utils/src/index'
+import { LogTypes } from '../../types/src/index'
 import { BrowserOptions } from './browserOptions'
 import { BrowserTransport } from './browserTransport'
 import { BrowserOptionsFieldsTypes } from './types'

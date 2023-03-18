@@ -1,8 +1,8 @@
-import { silentConsoleScope, Severity, getTimestamp, variableTypeDetection, getBigVersion, getUrlWithEnv } from '@jfsonjs/utils'
+import { silentConsoleScope, Severity, getTimestamp, variableTypeDetection, getBigVersion, getUrlWithEnv } from '../../utils/src/index'
 import { vue2VmHandler, vue3VmHandler } from './helper'
-import { BaseBreadcrumbTypes, BaseEventTypes, BREADCRUMBCATEGORYS, ErrorTypes } from '@jfsonjs/shared'
-import { BasePluginType, ReportDataType, ViewModel } from '@jfsonjs/types'
-import { BaseClient } from '@jfsonjs/core'
+import { BaseBreadcrumbTypes, BaseEventTypes, BREADCRUMBCATEGORYS, ErrorTypes } from '../../shared/src/index'
+import { BasePluginType, ReportDataType, ViewModel } from '../../types/src/index'
+import { BaseClient } from '../../core/src/index'
 
 const vuePlugin: BasePluginType<BaseEventTypes, BaseClient> = {
   name: BaseEventTypes.VUE,

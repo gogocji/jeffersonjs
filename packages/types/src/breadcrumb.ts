@@ -1,7 +1,7 @@
-import { Severity } from '@jfsonjs/utils'
+import { Severity } from '../../utils/src/index'
 import { ReportDataType } from './transport'
 import { TNumStrObj } from './common'
-import { BREADCRUMBCATEGORYS, BreadcrumbTypes } from '@jfsonjs/shared'
+import { BREADCRUMBCATEGORYS, BreadcrumbTypes } from '../../shared/src/index'
 import { ConsoleCollectType, RouteChangeCollectType } from './basePluginType'
 
 export interface BreadcrumbPushData {

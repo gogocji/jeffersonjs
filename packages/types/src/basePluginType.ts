@@ -1,4 +1,4 @@
-import { EventTypes } from '@jfsonjs/shared'
+import { EventTypes } from '../../shared/src/index'
 import { BaseClientType } from './baseClientType'
 
 export interface BasePluginType<T extends EventTypes = EventTypes, C extends BaseClientType = BaseClientType> {

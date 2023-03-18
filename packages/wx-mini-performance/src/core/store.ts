@@ -1,5 +1,5 @@
 import { noop, getPageUrl, getDeviceId } from '../utils'
-import { generateUUID, toStringValidateOption } from '@mitojs/utils'
+import { generateUUID, toStringValidateOption } from '../../../utils/src/index'
 import { WxPerformanceDataType, WxPerformanceItemType } from '../constant'
 import Event from './event'
 import {
@@ -10,7 +10,7 @@ import {
   WxPerformanceItem,
   WxPerformanceEntryObj
 } from '../types/index'
-import { ToStringTypes } from '@jfsonjs/shared'
+import { ToStringTypes } from '../../../shared/src/index'
 
 class Store extends Event {
   appId: string

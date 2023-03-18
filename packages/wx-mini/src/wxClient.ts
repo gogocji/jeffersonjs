@@ -1,7 +1,24 @@
-import { Breadcrumb, BaseClient } from '@jfsonjs/core'
-import { ErrorTypes, EventTypes, MitoLog, MitoLogEmptyMsg, MitoLogEmptyTag, Silent, WxBreadcrumbTypes, WxEventTypes } from '@jfsonjs/shared'
-import { extractErrorStack, firstStrtoUppercase, getCurrentRoute, getTimestamp, isError, Severity, unknownToString } from '@mitojs/utils'
-import { LogTypes, TrackReportDataType } from '@jfsonjs/types'
+import { Breadcrumb, BaseClient } from '../../core/src/index'
+import {
+  ErrorTypes,
+  EventTypes,
+  MitoLog,
+  MitoLogEmptyMsg,
+  MitoLogEmptyTag,
+  Silent,
+  WxBreadcrumbTypes,
+  WxEventTypes
+} from '../../shared/src/index'
+import {
+  extractErrorStack,
+  firstStrtoUppercase,
+  getCurrentRoute,
+  getTimestamp,
+  isError,
+  Severity,
+  unknownToString
+} from '../../utils/src/index'
+import { LogTypes, TrackReportDataType } from '../../types/src/index'
 import { WxOptions } from './wxOptions'
 import { WxTransport } from './wxTransport'
 import { WxOptionsFieldsTypes } from './types'

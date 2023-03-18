@@ -1,6 +1,6 @@
-import { BrowserBreadcrumbTypes, BrowserEventTypes, globalVar } from '@jfsonjs/shared'
-import { replaceOld, Severity, _global } from '@jfsonjs/utils'
-import { BasePluginType, ConsoleCollectType } from '@jfsonjs/types'
+import { BrowserBreadcrumbTypes, BrowserEventTypes, globalVar } from '../../../shared/src/index'
+import { replaceOld, Severity, _global } from '../../../utils/src/index'
+import { BasePluginType, ConsoleCollectType } from '../../../types/src/index'
 import { BrowserClient } from '../browserClient'
 import { addBreadcrumbInBrowser } from '../utils'
 const consolePlugin: BasePluginType<BrowserEventTypes, BrowserClient> = {

@@ -1,5 +1,5 @@
-import { ErrorTypes, WxAppEvents, WxBreadcrumbTypes, WxEventTypes } from '@jfsonjs/shared'
-import { BasePluginType, ReportDataType, voidFun } from '@jfsonjs/types'
+import { ErrorTypes, WxAppEvents, WxBreadcrumbTypes, WxEventTypes } from '../../../shared/src/index'
+import { BasePluginType, ReportDataType, voidFun } from '../../../types/src/index'
 import {
   extractErrorStack,
   getCurrentRoute,
@@ -11,7 +11,7 @@ import {
   Severity,
   unknownToString,
   _support
-} from '@mitojs/utils'
+} from '../../..//utils/src/index'
 import { WxLifeCycleBreadcrumb } from '../types'
 import { addBreadcrumbInWx, getWxMiniDeviceInfo } from '../utils'
 import { WxClient } from '../wxClient'

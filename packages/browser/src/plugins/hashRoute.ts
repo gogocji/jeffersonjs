@@ -1,6 +1,6 @@
-import { BrowserBreadcrumbTypes, BrowserEventTypes } from '@jfsonjs/shared'
-import { isExistProperty, on, parseUrlToObj, _global } from '@jfsonjs/utils'
-import { BasePluginType, RouteChangeCollectType } from '@jfsonjs/types'
+import { BrowserBreadcrumbTypes, BrowserEventTypes } from '../../../shared/src/index'
+import { isExistProperty, on, parseUrlToObj, _global } from '../../../utils/src/index'
+import { BasePluginType, RouteChangeCollectType } from '../../../types/src/index'
 import { BrowserClient } from '../browserClient'
 import { addBreadcrumbInBrowser } from '../utils'
 
