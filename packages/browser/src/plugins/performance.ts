@@ -9,7 +9,6 @@ const performancePlugin: BasePluginType<BrowserEventTypes, BrowserClient> = {
     // 获取FCP、LCP、TTFB、FID等指标
     getWebVitals((res) => {
       // name指标名称、rating 评级、value数值
-      console.log('res', res)
       notify(BrowserEventTypes.PERFORMANCE, res)
     })
   },
@@ -27,7 +26,6 @@ const performancePlugin: BasePluginType<BrowserEventTypes, BrowserClient> = {
   },
   // eslint-disable-next-line @typescript-eslint/no-misused-promises
   consumer(this: BrowserClient, performanceData: ReportDataType) {
-    console.log('performanceData', performanceData)
     this.transport.send(performanceData)
   }
 }

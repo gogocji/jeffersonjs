@@ -12,6 +12,7 @@ import unhandlerejectionPlugin from './plugins/unhandlerejecttion'
 import { BasePluginType } from '../../types/src/index'
 import performancePlugin from './plugins/performance'
 import whiteScreenPlugin from './plugins/whiteScreen'
+import rrwebPlugin from './plugins/rrweb'
 function createBrowserInstance(options: BrowserOptionsFieldsTypes = {}, plugins: BasePluginType[] = []) {
   const browserClient = new BrowserClient(options)
   const browserPlugins = [
@@ -24,7 +25,8 @@ function createBrowserInstance(options: BrowserOptionsFieldsTypes = {}, plugins:
     consolePlugin,
     unhandlerejectionPlugin,
     performancePlugin,
-    whiteScreenPlugin
+    whiteScreenPlugin,
+    rrwebPlugin,
   ]
   browserClient.use([...browserPlugins, ...plugins])
   return browserClient

@@ -15,7 +15,8 @@ export const enum BrowserEventTypes {
   UNHANDLEDREJECTION = 'unhandledrejection',
   CUSTOMER = 'Customer',
   PERFORMANCE = 'performance',
-  WHITESCREEN = 'whiteScreen'
+  WHITESCREEN = 'whiteScreen',
+  RECORDSCREEN = 'recordScreen',
 }
 
 export const enum BrowserBreadcrumbTypes {

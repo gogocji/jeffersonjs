@@ -107,6 +107,9 @@
     "@jfsonjs/types": "^3.0.3",
     "@jfsonjs/utils": "^3.0.3",
     "graphql": "^16.6.0",
+    "js-base64": "^3.7.5",
+    "pako": "^2.1.0",
+    "rrweb": "^2.0.0-alpha.4",
     "ua-parser-js": "^1.0.34",
     "upgrade": "^1.1.0",
     "web-vitals": "^3.3.0"

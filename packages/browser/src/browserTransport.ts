@@ -58,6 +58,14 @@ export class BrowserTransport extends BaseTransport<BrowserOptionsFieldsTypes> {
     this.queue.addTask(requestFun)
   }
   sendToServer(data: any, url: string) {
+    // 开启录屏
+    if (!_support.browserOptions.silentRecordScreen) {
+      if (_support.browserOptions.recordScreenTypeList.includes(data?.data.type)) {
+        // 修改hasError
+        _support.hasError = true;
+        data.data.recordScreenId = _support.recordScreenId;
+      }
+    }
     return this.useImgUpload ? this.imgRequest(data, url) : this.post(data, url)
   }
   getTransportData(data: ReportDataType) {

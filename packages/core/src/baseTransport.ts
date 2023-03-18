@@ -1,4 +1,4 @@
-import { logger, Queue, isInclude, createErrorId, isEmpty, validateOptionsAndSet } from '../../utils/src/index'
+import { logger, Queue, isInclude, createErrorId, isEmpty, validateOptionsAndSet, _support } from '../../utils/src/index'
 import { SDK_NAME, SDK_VERSION, ToStringTypes } from '../../shared/src/index'
 import { AuthInfo, BaseOptionsFieldsIntegrationType, BreadcrumbPushData, ReportDataType, TransportDataType } from '../../types/src/index'
 

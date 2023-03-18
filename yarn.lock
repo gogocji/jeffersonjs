@@ -1166,6 +1166,13 @@
     "estree-walker" "^2.0.1"
     "picomatch" "^2.2.2"
 
+"@rrweb/types@^2.0.0-alpha.4":
+  "integrity" "sha512-c7Adw44pNkNsE9wkBPrONaLS9fq2WtWAMFks9+6SjOLaRv+d6Iu7/6RNBokESHQkvaj1fZ8nPqxT9GjfQ5TMyQ=="
+  "resolved" "https://registry.npmjs.org/@rrweb/types/-/types-2.0.0-alpha.6.tgz"
+  "version" "2.0.0-alpha.6"
+  dependencies:
+    "rrweb-snapshot" "^2.0.0-alpha.6"
+
 "@rushstack/node-core-library@3.41.0":
   "integrity" "sha512-JxdmqR+SHU04jTDaZhltMZL3/XTz2ZZM47DTN+FSPUGUVp6WmxLlvJnT5FoHrOZWUjL/FoIlZUdUPTSXjTjIcg=="
   "resolved" "https://registry.npmmirror.com/@rushstack/node-core-library/-/node-core-library-3.41.0.tgz"
@@ -1302,6 +1309,11 @@
   "integrity" "sha512-XW/Aa8APYr6jSVVA1y/DEIZX0/GMKLEVekNG727R8cs56ahETkRAy/3DR7+fJyh7oUgGwNQaRfXCun0+KbWY7Q=="
   "resolved" "https://registry.npmmirror.com/@types/cookie/-/cookie-0.4.1.tgz"
   "version" "0.4.1"
+
+"@types/css-font-loading-module@0.0.7":
+  "integrity" "sha512-nl09VhutdjINdWyXxHWN/w9zlNCfr60JUqJbd24YXUuCwgeL0TpFSdElCwb6cxfB6ybE19Gjj4g0jsgkXxKv1Q=="
+  "resolved" "https://registry.npmjs.org/@types/css-font-loading-module/-/css-font-loading-module-0.0.7.tgz"
+  "version" "0.0.7"
 
 "@types/estree@*", "@types/estree@0.0.39":
   "integrity" "sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw=="
@@ -1599,6 +1611,11 @@
   "version" "0.3.2"
   dependencies:
     "tslib" "^2.3.0"
+
+"@xstate/fsm@^1.4.0":
+  "integrity" "sha512-b5o1I6aLNeYlU/3CPlj/Z91ybk1gUsKT+5NAJI+2W4UjvS5KLG28K9v5UvNoFVjHV8PajVZ00RH3vnjyQO7ZAw=="
+  "resolved" "https://registry.npmjs.org/@xstate/fsm/-/fsm-1.6.5.tgz"
+  "version" "1.6.5"
 
 "abab@^2.0.3", "abab@^2.0.5":
   "integrity" "sha512-j2afSsaIENvHZN2B8GOpF566vZ5WVk5opAiMTvWgaQT8DkbOqsTfvNAvHoRGU2zzP8cPoqys+xHTRDWW8L+/BA=="
@@ -1918,6 +1935,11 @@
     "isobject" "^3.0.1"
     "mixin-deep" "^1.2.0"
     "pascalcase" "^0.1.1"
+
+"base64-arraybuffer@^1.0.1":
+  "integrity" "sha512-I3yl4r9QB5ZRY3XuJVEPfc2XhZO6YweFPI+UovAzn+8/hb3oJ6lnysaFcjVpkCPfVWFUDvoZ8kmVDP7WyRtYtQ=="
+  "resolved" "https://registry.npmjs.org/base64-arraybuffer/-/base64-arraybuffer-1.0.2.tgz"
+  "version" "1.0.2"
 
 "base64-js@^1.3.1":
   "integrity" "sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA=="
@@ -3421,6 +3443,11 @@
   dependencies:
     "pend" "~1.2.0"
 
+"fflate@^0.4.4":
+  "integrity" "sha512-FJqqoDBR00Mdj9ppamLa/Y7vxm+PRmNWA67N846RvsoYVMKB4q3y/de5PA7gUmRMYK/8CMz2GDZQmCRN1wBcWA=="
+  "resolved" "https://registry.npmjs.org/fflate/-/fflate-0.4.8.tgz"
+  "version" "0.4.8"
+
 "figures@^3.0.0":
   "integrity" "sha512-yaduQFRKLXYOGgEn6AZau90j3ggSOyiqXU0F9JZfeXYhNa+Jk4X+s45A2zg5jns87GAFa34BBm2kXw4XpNcbdg=="
   "resolved" "https://registry.npmmirror.com/figures/-/figures-3.2.0.tgz"
@@ -4776,6 +4803,11 @@
   "resolved" "https://registry.npmmirror.com/jpeg-js/-/jpeg-js-0.3.7.tgz"
   "version" "0.3.7"
 
+"js-base64@^3.7.5":
+  "integrity" "sha512-3MEt5DTINKqfScXKfJFrRbxkrnk2AxPWGBL/ycjz4dK8iqiSJ06UxD8jh8xuh6p10TX4t2+7FsBYVxxQbMg+qA=="
+  "resolved" "https://registry.npmjs.org/js-base64/-/js-base64-3.7.5.tgz"
+  "version" "3.7.5"
+
 "js-cleanup@^1.2.0":
   "integrity" "sha512-JeDD0yiiSt80fXzAVa/crrS0JDPQljyBG/RpOtaSbyDq03VHa9szJWMaWOYU/bcTn412uMN2MxApXq8v79cUiQ=="
   "resolved" "https://registry.npmmirror.com/js-cleanup/-/js-cleanup-1.2.0.tgz"
@@ -5319,6 +5351,11 @@
     "qrcode-terminal" "^0.12.0"
     "ws" "^6.1.3"
 
+"mitt@^3.0.0":
+  "integrity" "sha512-7dX2/10ITVyqh4aOSVI9gdape+t9l2/8QxHrFmUXu4EEUpdlxl6RudZUPZoc+zuY2hk1j7XxVroIVIan/pD/SQ=="
+  "resolved" "https://registry.npmjs.org/mitt/-/mitt-3.0.0.tgz"
+  "version" "3.0.0"
+
 "mixin-deep@^1.2.0":
   "integrity" "sha512-WRoDn//mXBiJ1H40rqa3vH0toePwSsGb45iInWlTySa+Uu4k3tYUSxa2v1KqAiLtvlrSzaExqS1gtk96A9zvEA=="
   "resolved" "https://registry.npmmirror.com/mixin-deep/-/mixin-deep-1.3.2.tgz"
@@ -5747,8 +5784,13 @@
 
 "pako@^1.0.5":
   "integrity" "sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw=="
-  "resolved" "https://registry.npmmirror.com/pako/-/pako-1.0.11.tgz"
+  "resolved" "https://registry.npmjs.org/pako/-/pako-1.0.11.tgz"
   "version" "1.0.11"
+
+"pako@^2.1.0":
+  "integrity" "sha512-w+eufiZ1WuJYgPXbV/PO3NCMEc3xqylkKHzp8bxp1uW4qaSNQUkwmLLEc3kKsfz8lpV1F8Ht3U1Cm+9Srog2ug=="
+  "resolved" "https://registry.npmjs.org/pako/-/pako-2.1.0.tgz"
+  "version" "2.1.0"
 
 "parent-module@^1.0.0":
   "integrity" "sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g=="
@@ -6436,6 +6478,32 @@
   "version" "2.79.1"
   optionalDependencies:
     "fsevents" "~2.3.2"
+
+"rrdom@^0.1.7":
+  "integrity" "sha512-ZLd8f14z9pUy2Hk9y636cNv5Y2BMnNEY99wxzW9tD2BLDfe1xFxtLjB4q/xCBYo6HRe0wofzKzjm4JojmpBfFw=="
+  "resolved" "https://registry.npmjs.org/rrdom/-/rrdom-0.1.7.tgz"
+  "version" "0.1.7"
+  dependencies:
+    "rrweb-snapshot" "^2.0.0-alpha.4"
+
+"rrweb-snapshot@^2.0.0-alpha.4", "rrweb-snapshot@^2.0.0-alpha.6":
+  "integrity" "sha512-mTeIZn8a6crtHigyO+cSENuKq68ayEdSZJAybkWWVjJQOvDY9EHaqhc8jWXpNkPVcc8M5T8ORc/RXsc52osYHQ=="
+  "resolved" "https://registry.npmjs.org/rrweb-snapshot/-/rrweb-snapshot-2.0.0-alpha.6.tgz"
+  "version" "2.0.0-alpha.6"
+
+"rrweb@^2.0.0-alpha.4":
+  "integrity" "sha512-wEHUILbxDPcNwkM3m4qgPgXAiBJyqCbbOHyVoNEVBJzHszWEFYyTbrZqUdeb1EfmTRC2PsumCIkVcomJ/xcOzA=="
+  "resolved" "https://registry.npmjs.org/rrweb/-/rrweb-2.0.0-alpha.4.tgz"
+  "version" "2.0.0-alpha.4"
+  dependencies:
+    "@rrweb/types" "^2.0.0-alpha.4"
+    "@types/css-font-loading-module" "0.0.7"
+    "@xstate/fsm" "^1.4.0"
+    "base64-arraybuffer" "^1.0.1"
+    "fflate" "^0.4.4"
+    "mitt" "^3.0.0"
+    "rrdom" "^0.1.7"
+    "rrweb-snapshot" "^2.0.0-alpha.4"
 
 "rsvp@^4.8.4":
   "integrity" "sha512-nfMOlASu9OnRJo1mbEk2cz0D56a1MBNrJ7orjRZQG10XDyuvwksKbuXNp6qa+kbn839HwjwhBzhFmdsaEAfauA=="

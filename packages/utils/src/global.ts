@@ -4,6 +4,8 @@ import { DeviceInfo } from '../../types/src/index'
 import { BrowserDeviceInfo } from '../../types/src/common'
 import { variableTypeDetection } from './is'
 import { UAParser } from 'ua-parser-js'
+import { generateUUID } from './helpers'
+import { BrowserOptionsFieldsTypes } from '../../browser/src/index'
 
 /**
  *MITO的全局变量
@@ -17,6 +19,10 @@ export interface MitoSupport {
   record?: any[]
   deviceInfo?: DeviceInfo
   browserDeviceInfo?: BrowserDeviceInfo
+  events?: any[]
+  hasError?: boolean
+  recordScreenId?: string,
+  browserOptions: BrowserOptionsFieldsTypes
 }
 
 interface MITOGlobal {
@@ -45,6 +51,8 @@ export function getGlobal<T>() {
 // whether it is right use &
 const _global = getGlobal<Window & WechatMiniprogram.Wx>()
 const _support = getGlobalMitoSupport()
+
+// 解析设备信息deviceInfo
 const uaResult = new UAParser().getResult()
 
 /**
@@ -72,6 +80,15 @@ _support.browserDeviceInfo = {
   // pc
   device_type: uaResult.device.type ? uaResult.device.type : 'Pc'
 }
+
+// ======= 录屏相关 =========
+// 某段时间代码是否报错
+_support.hasError = false;
+
+// 存储录屏的信息
+_support.events = [];
+// 本次录屏的id
+_support.recordScreenId = generateUUID();
 
 export { _global, _support }
 

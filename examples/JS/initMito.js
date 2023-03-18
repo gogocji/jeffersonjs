@@ -8,7 +8,8 @@ const instance = MITO.init({
   throttleDelayTime: 0,
   enableTraceId: true,
   skeletonProject: true, // 项目是否有骨架屏
-  whiteBoxElements: ['html', 'body', '#app', '#root'], // 白屏
+  // whiteBoxElements: ['html', 'body', '#app', '#root'], // 白屏
+  silentRecordScreen: false,
   configReportXhr(xhr, reportData) {
     xhr.setRequestHeader('mito-header', 'test123')
   },

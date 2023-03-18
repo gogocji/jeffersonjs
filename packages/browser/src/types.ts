@@ -4,7 +4,8 @@ export interface BrowserOptionsFieldsTypes
   extends BrowsersilentOptionsType,
     BaseOptionsFieldsIntegrationType,
     BrowserOptionsHooksType,
-    BrowserWhiteScreenOptionsType {
+    BrowserWhiteScreenOptionsType,
+    BrowserRecordScreenOptionsType {
   /**
    * 默认为false，默认是xhr的上报方式，
    * 为true时，则使用img上报的方式，会在dsn后面追加data=encodeURIComponent(reportData)，在服务端接受时需要decodeURIComponent
@@ -70,4 +71,18 @@ export interface BrowserWhiteScreenOptionsType {
 
   // 容器列表，默认值为['html', 'body', '#app', '#root']
   whiteBoxElements?: string[]
+
+  // 是否开启白屏检测
+  silentWhiteScreen?: boolean
+}
+
+export interface BrowserRecordScreenOptionsType {
+  // 单次录屏时常，默认是10s
+  recordScreentime?: number
+
+  // 是否开启录屏
+  silentRecordScreen?: boolean
+
+  // 录屏事件集合
+  recordScreenTypeList?: string[]
 }
