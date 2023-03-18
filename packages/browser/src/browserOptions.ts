@@ -72,7 +72,7 @@ export class BrowserOptions extends BaseOptions<BrowserOptionsFieldsTypes> {
       silentWhiteScreen,
       recordScreentime,
       silentRecordScreen,
-      recordScreenTypeList,
+      recordScreenTypeList
     } = options
     const booleanType = ToStringTypes.Boolean
     const optionArr = [
@@ -91,7 +91,7 @@ export class BrowserOptions extends BaseOptions<BrowserOptionsFieldsTypes> {
       [recordScreentime, 'recordScreentime', ToStringTypes.Number],
       [silentWhiteScreen, 'silentWhiteScreen', booleanType],
       [silentRecordScreen, 'silentRecordScreen', booleanType],
-      [recordScreenTypeList, 'recordScreenTypeList', ToStringTypes.Array],
+      [recordScreenTypeList, 'recordScreenTypeList', ToStringTypes.Array]
     ]
     validateOptionsAndSet.call(this, optionArr)
   }
@@ -110,7 +110,7 @@ function initOption(options) {
       ErrorTypes.PROMISE,
       ErrorTypes.ROUTE,
       ErrorTypes.UNKNOWN,
-      ErrorTypes.UNKNOWN_FUNCTION,
+      ErrorTypes.UNKNOWN_FUNCTION
     ]
   }
   // 白屏检测的父容器列表

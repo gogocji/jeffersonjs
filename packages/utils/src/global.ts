@@ -21,7 +21,7 @@ export interface MitoSupport {
   browserDeviceInfo?: BrowserDeviceInfo
   events?: any[]
   hasError?: boolean
-  recordScreenId?: string,
+  recordScreenId?: string
   browserOptions: BrowserOptionsFieldsTypes
 }
 
@@ -83,12 +83,12 @@ _support.browserDeviceInfo = {
 
 // ======= 录屏相关 =========
 // 某段时间代码是否报错
-_support.hasError = false;
+_support.hasError = false
 
 // 存储录屏的信息
-_support.events = [];
+_support.events = []
 // 本次录屏的id
-_support.recordScreenId = generateUUID();
+_support.recordScreenId = generateUUID()
 
 export { _global, _support }
 

@@ -26,7 +26,7 @@ function createBrowserInstance(options: BrowserOptionsFieldsTypes = {}, plugins:
     unhandlerejectionPlugin,
     performancePlugin,
     whiteScreenPlugin,
-    rrwebPlugin,
+    rrwebPlugin
   ]
   browserClient.use([...browserPlugins, ...plugins])
   return browserClient

@@ -62,8 +62,8 @@ export class BrowserTransport extends BaseTransport<BrowserOptionsFieldsTypes> {
     if (!_support.browserOptions.silentRecordScreen) {
       if (_support.browserOptions.recordScreenTypeList.includes(data?.data.type)) {
         // 修改hasError
-        _support.hasError = true;
-        data.data.recordScreenId = _support.recordScreenId;
+        _support.hasError = true
+        data.data.recordScreenId = _support.recordScreenId
       }
     }
     return this.useImgUpload ? this.imgRequest(data, url) : this.post(data, url)

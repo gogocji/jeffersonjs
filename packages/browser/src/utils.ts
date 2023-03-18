@@ -2,8 +2,8 @@ import { BrowserBreadcrumbTypes } from '../../shared/src/index'
 import { getBreadcrumbCategoryInBrowser, Severity } from '../../utils/src/index'
 import { BrowserClient } from './browserClient'
 import { BrowserTransport } from './browserTransport'
-import { Base64 } from 'js-base64';
-import pako from 'pako';
+import { Base64 } from 'js-base64'
+import pako from 'pako'
 
 export async function addBreadcrumbInBrowser(
   this: BrowserClient,
@@ -36,17 +36,16 @@ export async function addBreadcrumbInBrowser(
 
 // 压缩
 export function zip(data) {
-  if (!data) return data;
+  if (!data) return data
   // 判断数据是否需要转为JSON
-  const dataJson =
-    typeof data !== 'string' && typeof data !== 'number' ? JSON.stringify(data) : data;
+  const dataJson = typeof data !== 'string' && typeof data !== 'number' ? JSON.stringify(data) : data
   // 使用Base64.encode处理字符编码，兼容中文
-  const str = Base64.encode(dataJson as string);
-  const binaryString = pako.gzip(str);
-  const arr = Array.from(binaryString);
-  let s = '';
+  const str = Base64.encode(dataJson as string)
+  const binaryString = pako.gzip(str)
+  const arr = Array.from(binaryString)
+  let s = ''
   arr.forEach((item: number) => {
-    s += String.fromCharCode(item);
-  });
-  return Base64.btoa(s);
+    s += String.fromCharCode(item)
+  })
+  return Base64.btoa(s)
 }
