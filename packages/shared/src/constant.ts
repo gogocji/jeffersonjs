@@ -14,7 +14,8 @@ export const enum ErrorTypes {
   REACT = 'REACT',
   RESOURCE = 'RESOURCE',
   PROMISE = 'PROMISE',
-  ROUTE = 'ROUTE'
+  ROUTE = 'ROUTE',
+  WHITESCREEN = 'whiteScreen',
 }
 
 /**

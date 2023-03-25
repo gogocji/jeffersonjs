@@ -22,15 +22,15 @@ export async function addBreadcrumbInBrowser(
     ...params
   })
   // 面包屑超过十个就上报
-  if (breadcrumbStack.length >= 10) {
-    try {
-      await this.transport.send({}, breadcrumbStack)
-      this.breadcrumb.clear()
-      return []
-    } catch (error) {
-      console.log('面包屑上报失败')
-    }
-  }
+  // if (breadcrumbStack.length >= 10) {
+  //   try {
+  //     await this.transport.send({}, breadcrumbStack)
+  //     this.breadcrumb.clear()
+  //     return []
+  //   } catch (error) {
+  //     console.log('面包屑上报失败')
+  //   }
+  // }
   return breadcrumbStack
 }
 
